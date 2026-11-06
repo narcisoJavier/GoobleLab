@@ -1,0 +1,108 @@
+{
+  "repo_id": "Comfy-Org/MiniMax-H3",
+  "revision": "54472221d27c695fca9621b0c3ed52f06c4af707",
+  "assets": {
+    "fl2va": {
+      "path": "diffusion_models/minimax_h3_fl2va_pruned_fp8_scaled.safetensors",
+      "size": 20958205608,
+      "sha256": "12944c1f7791637e7de12208aef04da82bd26b95271b1b47d817364315ade993"
+    },
+    "ref2va": {
+      "path": "diffusion_models/minimax_h3_ref2va_pruned_fp8_scaled.safetensors",
+      "size": 20958205608,
+      "sha256": "f86f2f79ebd2d76eb8eeb46091e83982e6ff51d255747e7b16e92834b392b8e9"
+    },
+    "text": {
+      "path": "text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "size": 15687142551,
+      "sha256": "35a88d51044231fe332301d7a62aa81e3f2cba62febeb446e2c1e3e0ef76f2c6"
+    },
+    "video_vae": {
+      "path": "vae/minimax_h3_video_vae_fp16.safetensors",
+      "size": 5207808496,
+      "sha256": "7c1f131492e7eddacaac9069a61b81bdd39de5cc96561e677c5eab1cdce5e522"
+    },
+    "audio_vae": {
+      "path": "vae/minimax_h3_audio_vae_fp32.safetensors",
+      "size": 605254808,
+      "sha256": "8e505d95dd1561d47abd43d4238fd40d9bb1ae9e147ed0a4cba778d76ae4db48"
+    },
+    "fl2va_lora8": {
+      "path": "loras/minimax_h3_fl2v_turbo_8step_v1.0_comfyui_bf16.safetensors",
+      "size": 1956193000,
+      "sha256": "2339acdf19bfe123f46b971ea35d367a84adb85de43627e1eceafa5a5b2b111e"
+    },
+    "fl2va_lora4": {
+      "path": "loras/minimax_h3_fl2v_turbo_4step_v1.0_768p_comfyui_bf16.safetensors",
+      "size": 1956192992,
+      "sha256": "c396a9a06f58399e9df9754b18299818d84a2ddd371724ba48fe4a41221437dc"
+    },
+    "ref2va_lora4": {
+      "path": "loras/minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors",
+      "size": 1956193000,
+      "sha256": "5b9ab5ade15d0775676d01a907268a69a1468dc6033b3b0d3ded5502f3ebb84c"
+    }
+  },
+  "common": [
+    "text",
+    "video_vae",
+    "audio_vae"
+  ],
+  "presets": {
+    "fl2va-turbo-8": {
+      "label": "H3 FL2VA Turbo 8 (default)",
+      "family": "fl2va",
+      "diffusion": "fl2va",
+      "lora": "fl2va_lora8",
+      "steps": 8,
+      "sampler": "res_multistep",
+      "shift_video": 12.0,
+      "shift_audio": 3.0
+    },
+    "fl2va-base": {
+      "label": "H3 FL2VA Base 20",
+      "family": "fl2va",
+      "diffusion": "fl2va",
+      "lora": null,
+      "steps": 20,
+      "sampler": "res_multistep",
+      "shift_video": 12.0,
+      "shift_audio": 3.0
+    },
+    "fl2va-turbo-4": {
+      "label": "H3 FL2VA Turbo 4 (768p)",
+      "family": "fl2va",
+      "diffusion": "fl2va",
+      "lora": "fl2va_lora4",
+      "steps": 4,
+      "sampler": "euler",
+      "shift_video": 6.0,
+      "shift_audio": 3.0
+    },
+    "ref2va-base": {
+      "label": "H3 Reference Base 20",
+      "family": "ref2va",
+      "diffusion": "ref2va",
+      "lora": null,
+      "steps": 20,
+      "sampler": "res_multistep",
+      "shift_video": 12.0,
+      "shift_audio": 3.0
+    },
+    "ref2va-turbo-4": {
+      "label": "H3 Reference Turbo 4 (experimental 544p)",
+      "family": "ref2va",
+      "diffusion": "ref2va",
+      "lora": "ref2va_lora4",
+      "steps": 4,
+      "sampler": "euler",
+      "shift_video": 12.0,
+      "shift_audio": 3.0
+    }
+  },
+  "sources": [
+    "https://huggingface.co/Comfy-Org/MiniMax-H3",
+    "https://github.com/ModelTC/Minimax-H3-Turbo/blob/main/COMFYUI_SETUP_AND_INFERENCE.md",
+    "https://github.com/Comfy-Org/ComfyUI/blob/v0.44.0/comfy_extras/nodes_minimax_h3.py"
+  ]
+}

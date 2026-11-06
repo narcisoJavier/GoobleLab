@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+.env
+.env.*
+*.safetensors
+*.ckpt
+*.pt
+*.mp4
+*.log
+models/
+outputs/
+drive/
