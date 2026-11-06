@@ -54,6 +54,8 @@ The implementation is intentionally small: `MiniMax_H3_Colab.ipynb` provides the
 
 ## Licenses and credits
 
+Run the offline checks with `python -m unittest discover -s tests -v`. They do not install packages, download model weights, or execute GPU inference.
+
 Repository code is [MIT licensed](LICENSE). Downloaded model weights, LoRAs, ComfyUI, and other dependencies retain their own upstream licenses and conditions; the MIT license does not relicense them. Review the model and adapter licenses before commercial use or redistribution.
 
-Built on [ComfyUI](https://github.com/Comfy-Org/ComfyUI) and its [MiniMax H3 guide](https://docs.comfy.org/tutorials/video/minimax/minimax-h3). See the [Colab FAQ](https://research.google.com/colaboratory/faq.html) for current resource limits. This is a community notebook, unaffiliated with MiniMax, Google, or ComfyUI.
+Built on [ComfyUI](https://github.com/Comfy-Org/ComfyUI), its [MiniMax H3 guide](https://docs.comfy.org/tutorials/video/minimax/minimax-h3), and the [Turbo LoRA publisher's settings](https://github.com/ModelTC/Minimax-H3-Turbo/blob/main/COMFYUI_SETUP_AND_INFERENCE.md). See the [Colab FAQ](https://research.google.com/colaboratory/faq.html) for current resource limits. This is a community notebook, unaffiliated with MiniMax, Google, or ComfyUI.
