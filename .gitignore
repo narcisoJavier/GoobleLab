@@ -12,3 +12,10 @@ __pycache__/
 models/
 outputs/
 drive/
+desktop/target/
+dist/
+client_secret*.json
+credentials*.json
+.impeccable/decisions/
+.impeccable/mocks/
+.impeccable/review/

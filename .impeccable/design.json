@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-07T17:34:28.2234921+08:00",
+  "title": "Design System: GoobleLab",
+  "extensions": {
+    "colorMeta": {
+      "rail": { "role": "primary", "displayName": "Chrome yellow" },
+      "accent": { "role": "primary", "displayName": "Deep green" },
+      "ground": { "role": "neutral", "displayName": "Warm ground" },
+      "surface": { "role": "neutral", "displayName": "Warm white" },
+      "summary": { "role": "neutral", "displayName": "Summary paper" },
+      "workflow-selected": { "role": "neutral", "displayName": "Selected paper" },
+      "ink": { "role": "neutral", "displayName": "Ink" },
+      "muted": { "role": "neutral", "displayName": "Olive grey" },
+      "border": { "role": "neutral", "displayName": "Paper border" },
+      "control-hover": { "role": "neutral", "displayName": "Warm hover paper" },
+      "control-active": { "role": "neutral", "displayName": "Warm pressed paper" },
+      "white": { "role": "neutral", "displayName": "White" },
+      "error": { "displayName": "Error red" },
+      "warning": { "displayName": "Warning brown" }
+    },
+    "typographyMeta": {
+      "title": { "displayName": "Screen title", "purpose": "Native screen headings." },
+      "body": { "displayName": "Body", "purpose": "Native labels and editable values." },
+      "button": { "displayName": "Button", "purpose": "Native action labels." },
+      "guidance": { "displayName": "Guidance", "purpose": "Short introductions and the rail product statement. Georgia is loaded from Windows; failed loading falls back to the proportional family." },
+      "template-title": { "displayName": "Template title", "purpose": "Workflow choice titles." },
+      "template-guidance": { "displayName": "Template guidance", "purpose": "Short serif descriptions inside workflow choices." },
+      "small": { "displayName": "Small", "purpose": "Help text, summary labels and privacy notes." }
+    },
+    "shadows": [
+      { "name": "native-popup", "value": "egui Shadow { offset: [6, 10], blur: 8, spread: 0, color: black alpha 25/255 }", "purpose": "Inherited egui 0.37 light-theme popup default. Main panels and workflow choices do not use this shadow." }
+    ],
+    "motion": [
+      { "name": "native-widget-animation", "value": "0.2s", "purpose": "Inherited egui Style.animation_time, without a custom easing or motion system." }
+    ],
+    "breakpoints": []
+  },
+  "components": [
+    {
+      "name": "Primary action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Shadow-DOM illustration of the native button; explicit deep-green fill and white text persist through interaction. Native egui remains the behavior source.",
+      "html": "<button class=\"ds-primary\">Continue to settings</button>",
+      "css": ".ds-primary { font-family: 'Segoe UI', sans-serif; font-size: 16px; color: #ffffff; background: #253d36; border: 1px solid #ccc9b9; border-radius: 6px; padding: 9px 14px; min-height: 36px; } .ds-primary:hover { border-color: #696969; } .ds-primary:focus-visible, .ds-primary:active { border-color: #000000; outline: none; } .ds-primary:disabled { opacity: 0.5; }"
+    },
+    {
+      "name": "Secondary action",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Shadow-DOM illustration of an ordinary native button, with the observed warm hover and pressed fills.",
+      "html": "<button class=\"ds-secondary\">Choose image…</button>",
+      "css": ".ds-secondary { font-family: 'Segoe UI', sans-serif; font-size: 16px; color: #17201f; background: #fffdf7; border: 1px solid #ccc9b9; border-radius: 6px; padding: 9px 14px; min-height: 36px; } .ds-secondary:hover { background: #efe6c6; border-color: #696969; } .ds-secondary:focus-visible, .ds-secondary:active { background: #e6dbb3; border-color: #000000; outline: none; } .ds-secondary:disabled { opacity: 0.5; }"
+    },
+    {
+      "name": "Text field",
+      "kind": "input",
+      "refersTo": "text-field",
+      "description": "Shadow-DOM illustration of a labelled native text field; white background and native state strokes come from the pinned egui light theme.",
+      "html": "<label class=\"ds-field\">Project name<input class=\"ds-text\" value=\"My H3 video\" /></label>",
+      "css": ".ds-field { display: grid; gap: 10px; font-family: 'Segoe UI', sans-serif; font-size: 16px; color: #17201f; } .ds-text { font-family: 'Segoe UI', sans-serif; font-size: 16px; color: #17201f; background: #ffffff; border: 1px solid #ccc9b9; border-radius: 6px; } .ds-text:hover { border-color: #696969; } .ds-text:focus-visible { border-color: #000000; outline: none; } .ds-text::selection { color: #ffffff; background: #253d36; } .ds-text:disabled { opacity: 0.5; }"
+    },
+    {
+      "name": "Progress rail",
+      "kind": "nav",
+      "refersTo": "progress-tab",
+      "description": "Shadow-DOM illustration of the three native step buttons. The selected square backing reaches the yellow rail edge; all rail text uses ink.",
+      "html": "<nav class=\"ds-rail\" aria-label=\"Builder steps\"><button class=\"ds-step ds-current\" aria-current=\"step\">1  Template</button><button class=\"ds-step\">2  Settings</button><button class=\"ds-step\">3  Export/upload</button></nav>",
+      "css": ".ds-rail { width: 157px; padding: 24px; display: grid; gap: 10px; background: #f4c62a; } .ds-step { position: relative; min-width: 155px; min-height: 44px; padding: 9px 14px; font-family: 'Segoe UI', sans-serif; font-size: 16px; color: #17201f; background: #f4c62a; border: none; border-radius: 6px; } .ds-current { background: #fffdf7; } .ds-current::before { position: absolute; inset: 0 -24px 0 0; background: #fffdf7; content: ''; z-index: -1; } .ds-step:hover { color: #17201f; } .ds-step:focus-visible { outline: 1px solid #000000; } .ds-step:active { color: #17201f; } .ds-step:disabled { opacity: 0.5; }"
+    },
+    {
+      "name": "Workflow choice",
+      "kind": "card",
+      "refersTo": "workflow-selected",
+      "description": "Shadow-DOM illustration of the selected 105-high native workflow button, with its UI title and serif guidance. The native source supplies layout and interaction.",
+      "html": "<button class=\"ds-workflow\" aria-pressed=\"true\"><span class=\"ds-workflow-title\">Text to video</span><span class=\"ds-workflow-help\">Describe a scene, motion and sound. No input image needed.</span></button>",
+      "css": ".ds-workflow { width: 100%; height: 105px; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 9px 14px; background: #fff9db; color: #17201f; border: 2px solid #253d36; border-radius: 6px; } .ds-workflow-title { font-family: 'Segoe UI', sans-serif; font-size: 18px; } .ds-workflow-help { font-family: Georgia, serif; font-size: 15px; color: #586052; } .ds-workflow:hover { border-color: #253d36; } .ds-workflow:focus-visible { outline: 1px solid #000000; } .ds-workflow:active { background: #fff9db; }"
+    },
+    {
+      "name": "Notebook plan",
+      "kind": "custom",
+      "refersTo": "notebook-summary",
+      "description": "Shadow-DOM illustration of the native summary pane's tonal surface and label/value pairing; the application updates and scrolls it independently.",
+      "html": "<aside class=\"ds-plan\"><div class=\"ds-plan-title\">Notebook plan</div><div class=\"ds-plan-label\">Workflow</div><div class=\"ds-plan-value\">Text to video</div><div class=\"ds-plan-label\">Output</div><div class=\"ds-plan-value\">1344 × 768</div><div class=\"ds-plan-help\">GPU execution happens in Colab. No local GPU needed for this builder.</div></aside>",
+      "css": ".ds-plan { width: 191px; padding: 22px; background: #eee9dc; color: #17201f; font-family: 'Segoe UI', sans-serif; font-size: 16px; border-radius: 0; } .ds-plan-title { font-size: 19px; margin-bottom: 20px; } .ds-plan-label { color: #586052; font-size: 13px; margin-bottom: 10px; } .ds-plan-value { margin-bottom: 22px; } .ds-plan-help { color: #586052; font-size: 13px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Chrome manual",
+    "overview": "A bright yellow progress rail, warm reading surfaces and dark green actions give the optional notebook companion the character of a practical printed manual. Segoe UI carries the controls; Georgia carries short guidance. The notebook remains the core product, and GPU work happens in Colab.\n\nThis documents the implemented working direction after the user's request for a bolder design. The user has not locked an exploration card; this is an observed system, not a claim of final visual approval. The source of truth is `desktop/src/main.rs`, with inherited widget behavior from the locked egui 0.37.0 dependency. Measurements use native logical pixels (egui points), scaled by desktop DPI; they are not CSS rem or fixed physical pixels.",
+    "keyCharacteristics": [
+      "Chrome-yellow orientation rail and warm neutral work surfaces.",
+      "Native Windows typography with serif guidance.",
+      "Flat panels, compact controls and a continuously visible notebook plan.",
+      "Text, borders and selection states carry meaning without shipping raster artwork."
+    ],
+    "rules": [
+      { "name": "The Rail Contrast Rule", "body": "Rail text and rail hyperlinks use ink. The general green hyperlink color is used on the reading surfaces.", "section": "colors" },
+      { "name": "The Guidance Rule", "body": "Use the serif family for short guidance; controls and editable text use the proportional UI family.", "section": "typography" }
+    ],
+    "dos": [
+      "Do retain ink text and links on the yellow rail.",
+      "Do keep control text in the UI family and short guidance in the guidance family.",
+      "Do preserve the independent work and summary scrollers at the minimum window size.",
+      "Do keep the notebook plan and the Colab handoff explicit.",
+      "Do use native control behavior and the implemented palette when extending this companion."
+    ],
+    "donts": [
+      "Don't treat the working Chrome manual direction as a locked user selection.",
+      "Don't describe native logical pixels as web rem or add unimplemented mobile breakpoints.",
+      "Don't replace observable native states with invented CSS effects, gradients or card shadows.",
+      "Don't imply that the desktop app runs local inference or that live Google sign-in has been verified."
+    ]
+  }
+}
