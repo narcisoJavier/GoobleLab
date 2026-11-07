@@ -48,14 +48,20 @@ function summary() {
   <div class="handoff">Template → notebook → Colab</div><div class="plan-actions"><button class="button small" data-action="save">Save project</button><a class="button small" href="${COLAB}" target="_blank" rel="noopener noreferrer">Open core notebook</a></div>
   <p class="plan-note">Projects save in this browser. Generation uses your own Colab account and compute.</p><span class="badge ${plan === 'pro' ? 'pro' : ''}">${plan === 'pro' ? 'Pro customization preview' : 'Free notebook builder'}</span>`;
 }
+function templateArt(kind) {
+  const source = kind === 'text'
+    ? '<path d="M21 33h39M21 43h30M21 53h35"/>'
+    : '<rect x="17" y="26" width="48" height="34" rx="4"/><circle cx="51" cy="36" r="3"/><path d="m21 55 13-13 10 10 7-7 10 10"/>';
+  return `<svg class="template-art" viewBox="0 0 180 86" aria-hidden="true">${source}<path d="M77 43h24m-6-5 6 5-6 5"/><rect x="116" y="22" width="46" height="42" rx="5"/><path d="m135 35 12 8-12 8z"/>${kind === 'reference' ? '<path d="M113 28h-4v42h45v-3"/>' : ''}</svg>`;
+}
 function templateView() {
-  return `<h1>Choose your workflow</h1><p class="intro">A few choices here. An editable notebook ready for Colab.</p>
+  return `<h1>What would you like to create?</h1><p class="intro">Choose a starting point for your MiniMax H3 notebook.</p>
   ${plan === 'pro' ? '<p class="preview-note"><strong>Pro preview.</strong> Explore advanced customization. Billing is not enabled.</p>' : ''}
   <fieldset class="workflow-list"><legend>MiniMax H3 workflow</legend>${[
     ['text', 'Describe a scene, motion and sound. Start with the basic MiniMax H3 notebook.'],
     ['image', 'Bring a first frame and describe what happens next.'],
     ['reference', 'Guide a character or style with a reference image.'],
-  ].map(([value, description]) => `<label class="workflow"><input type="radio" name="template" value="${value}" ${activeConfig().template === value ? 'checked' : ''} ${plan === 'free' && value !== 'text' ? 'disabled' : ''}><span><strong>${names[value]}</strong><span class="description">${description}</span></span>${value !== 'text' ? '<span class="badge pro">Pro</span>' : '<span class="badge">Free</span>'}</label>`).join('')}</fieldset>
+  ].map(([value, description]) => `<label class="workflow"><span class="workflow-top"><input type="radio" name="template" value="${value}" ${activeConfig().template === value ? 'checked' : ''} ${plan === 'free' && value !== 'text' ? 'disabled' : ''}>${value !== 'text' ? '<span class="badge pro">Pro</span>' : '<span class="badge">Free</span>'}</span>${templateArt(value)}<span class="workflow-copy"><strong>${names[value]}</strong><span class="description">${description}</span></span></label>`).join('')}</fieldset>
   <div class="after-choices">${plan === 'free' ? '<button class="text-button" data-action="pro">Preview Pro workflows and customization</button>' : '<p class="quiet">Curated workflows use the same native ComfyUI nodes as the core notebook.</p>'}
   <p class="quiet">Your notebook runs in Colab. This browser app prepares its settings and files.</p></div>`;
 }
@@ -93,7 +99,7 @@ function exportView() {
   <section class="export-path"><h2>When you finish in Colab</h2><p>Enable STOP_BACKEND in Step 6 and run it. Then disconnect and delete the runtime to release your GPU. Videos save to My Drive → ComfyUI_Outputs when Drive is enabled.</p></section>`;
 }
 function builder() {
-  return `<div class="shell"><aside class="rail"><div><h2>Your next video.</h2><p class="guidance">Start with an idea.<br>Leave with a notebook.</p></div><nav class="steps" aria-label="Builder steps">${['Template','Settings','Export / upload'].map((label, i) => `<button class="step" data-step="${i}" ${i === step ? 'aria-current="step"' : ''} ${busy ? 'disabled' : ''}><span class="step-number">${i + 1}</span>${label}</button>`).join('')}</nav><div class="rail-note">MiniMax H3, configured in your browser.<a href="#plans">Explore Free & Pro</a></div></aside>
+  return `<div class="shell${step > 0 ? ' is-editing' : ''}"><div class="builder-heading"><p class="builder-title">Your next video.<br><span>Ready for Colab.</span></p><div class="builder-context"><p>From an idea to an editable notebook.<br>Configure MiniMax H3 here. Create on your Colab GPU.</p><a href="${REPO}" target="_blank" rel="noopener noreferrer">Open source. Yours to build on.<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 15 15 4M5 4h10v10"/></svg></a></div></div><aside class="rail"><nav class="steps" aria-label="Builder steps">${['Template','Settings','Export / upload'].map((label, i) => `<button class="step" data-step="${i}" ${i === step ? 'aria-current="step"' : ''} ${busy ? 'disabled' : ''}><span class="step-number">${i + 1}</span>${label}</button>`).join('')}</nav><div class="rail-note">Your notebook. Your compute.</div></aside>
   <main class="workspace" id="main" tabindex="-1"><div id="work">${[templateView,settingsView,exportView][step]()}</div><p id="form-error" class="error" role="alert" hidden></p><p id="busy-text" class="busy-text" role="status" ${busy ? '' : 'hidden'}>Working with Google Drive. Please keep this tab open…</p><div class="actions">${step > 0 ? '<button class="button" data-action="back">Back</button>' : ''}${step < 2 ? `<button class="button primary" data-action="next">${step === 0 ? 'Continue to settings' : 'Review notebook'}</button>` : '<button class="text-button" data-action="restart">Start another notebook</button>'}</div></main><aside class="plan" aria-label="Current notebook plan" id="plan">${summary()}</aside></div>`;
 }
 function projectsView() {

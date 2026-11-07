@@ -4,11 +4,11 @@
 
 ## Platform
 
-Browser application and Google Colab notebooks. The browser is the primary interface; editable notebooks remain the core output and can be used directly. The Windows v0.2.0 companion is preserved as an optional legacy interface.
+web
 
 ## Stack
 
-Dependency-free HTML, CSS and browser JavaScript, with a small Node.js static build script. Google Identity Services supports the optional Web OAuth upload preview. Python and native ComfyUI nodes execute workflows on Colab. The existing Rust egui/eframe desktop source remains available.
+Dependency-free HTML, CSS and browser JavaScript, with a small Node.js static build script. Google Identity Services supports the optional Web OAuth upload preview. Python and native ComfyUI nodes execute workflows on Colab. The existing Rust egui/eframe desktop source remains available. The browser is the primary interface; editable Google Colab notebooks remain the core output and can be used directly. The Windows v0.2.0 companion is preserved as an optional legacy interface.
 
 ## Users
 
@@ -36,7 +36,7 @@ The existing repository has a working H3 FL2VA eight-step notebook and five cura
 
 ## Brand Commitments
 
-The application and repository are named GoobleLab, spelled G-O-O-B-L-E-L-A-B. The notebook remains central in the product explanation; the browser provides the primary guided interface. Keep the warm yellow visual direction and visible MiniMax H3 attribution.
+The application and repository are named GoobleLab, spelled G-O-O-B-L-E-L-A-B. The notebook remains central in the product explanation; the browser provides the primary guided interface. Keep visible MiniMax H3 attribution. The user rejected the former yellow browser UI and explicitly requested inspiration from [HackerRank](https://www.hackerrank.com/) and [Eloqwnt](https://www.eloqwnt.com/): calm editorial typography, an airy geometric interface, green/white surfaces and restrained navigation. This reference direction governs the browser; the native Windows companion retains its separate legacy system.
 
 ## Evidence on Hand
 

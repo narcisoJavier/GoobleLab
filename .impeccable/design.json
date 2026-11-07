@@ -1,195 +1,402 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-07T10:01:40.471241+00:00",
+  "generatedAt": "2026-11-07T10:22:27.948542+00:00",
   "title": "Design System: GoobleLab",
   "extensions": {
     "colorMeta": {
-      "rail": {
-        "role": "primary",
-        "displayName": "Chrome yellow"
-      },
       "accent": {
         "role": "primary",
-        "displayName": "Deep green"
+        "displayName": "Forest green",
+        "tonalRamp": [
+          "oklch(15% 0.0216 161.3)",
+          "oklch(25% 0.0350 161.3)",
+          "oklch(35% 0.0483 161.3)",
+          "oklch(45% 0.0616 161.3)",
+          "oklch(60% 0.0683 161.3)",
+          "oklch(72% 0.0523 161.3)",
+          "oklch(85% 0.0350 161.3)",
+          "oklch(95% 0.0216 161.3)"
+        ]
       },
       "ground": {
         "role": "neutral",
-        "displayName": "Warm ground"
+        "displayName": "Cool ground",
+        "tonalRamp": [
+          "oklch(15% 0.0012 157.2)",
+          "oklch(25% 0.0019 157.2)",
+          "oklch(35% 0.0027 157.2)",
+          "oklch(45% 0.0034 157.2)",
+          "oklch(60% 0.0038 157.2)",
+          "oklch(72% 0.0029 157.2)",
+          "oklch(85% 0.0019 157.2)",
+          "oklch(95% 0.0012 157.2)"
+        ]
       },
       "surface": {
         "role": "neutral",
-        "displayName": "Warm white"
+        "displayName": "White surface",
+        "tonalRamp": [
+          "oklch(15% 0.0000 0.0)",
+          "oklch(25% 0.0000 0.0)",
+          "oklch(35% 0.0000 0.0)",
+          "oklch(45% 0.0000 0.0)",
+          "oklch(60% 0.0000 0.0)",
+          "oklch(72% 0.0000 0.0)",
+          "oklch(85% 0.0000 0.0)",
+          "oklch(95% 0.0000 0.0)"
+        ]
       },
       "summary": {
         "role": "neutral",
-        "displayName": "Summary paper"
+        "displayName": "Mint plan",
+        "tonalRamp": [
+          "oklch(15% 0.0031 158.8)",
+          "oklch(25% 0.0050 158.8)",
+          "oklch(35% 0.0070 158.8)",
+          "oklch(45% 0.0089 158.8)",
+          "oklch(60% 0.0098 158.8)",
+          "oklch(72% 0.0075 158.8)",
+          "oklch(85% 0.0050 158.8)",
+          "oklch(95% 0.0031 158.8)"
+        ]
       },
-      "workflow-selected": {
+      "selected": {
         "role": "neutral",
-        "displayName": "Selected paper"
+        "displayName": "Selection mint",
+        "tonalRamp": [
+          "oklch(15% 0.0041 155.6)",
+          "oklch(25% 0.0065 155.6)",
+          "oklch(35% 0.0090 155.6)",
+          "oklch(45% 0.0115 155.6)",
+          "oklch(60% 0.0128 155.6)",
+          "oklch(72% 0.0098 155.6)",
+          "oklch(85% 0.0065 155.6)",
+          "oklch(95% 0.0041 155.6)"
+        ]
       },
       "ink": {
         "role": "neutral",
-        "displayName": "Ink"
+        "displayName": "Green-black ink",
+        "tonalRamp": [
+          "oklch(15% 0.0065 166.2)",
+          "oklch(25% 0.0105 166.2)",
+          "oklch(35% 0.0145 166.2)",
+          "oklch(45% 0.0184 166.2)",
+          "oklch(60% 0.0204 166.2)",
+          "oklch(72% 0.0157 166.2)",
+          "oklch(85% 0.0105 166.2)",
+          "oklch(95% 0.0065 166.2)"
+        ]
       },
       "muted": {
         "role": "neutral",
-        "displayName": "Olive grey"
+        "displayName": "Sage gray",
+        "tonalRamp": [
+          "oklch(15% 0.0053 160.1)",
+          "oklch(25% 0.0086 160.1)",
+          "oklch(35% 0.0119 160.1)",
+          "oklch(45% 0.0152 160.1)",
+          "oklch(60% 0.0168 160.1)",
+          "oklch(72% 0.0129 160.1)",
+          "oklch(85% 0.0086 160.1)",
+          "oklch(95% 0.0053 160.1)"
+        ]
       },
       "border": {
         "role": "neutral",
-        "displayName": "Paper border"
-      },
-      "control-hover": {
-        "role": "neutral",
-        "displayName": "Warm hover paper"
-      },
-      "control-active": {
-        "role": "neutral",
-        "displayName": "Warm pressed paper"
-      },
-      "white": {
-        "role": "neutral",
-        "displayName": "White"
+        "displayName": "Soft outline",
+        "tonalRamp": [
+          "oklch(15% 0.0042 155.5)",
+          "oklch(25% 0.0067 155.5)",
+          "oklch(35% 0.0093 155.5)",
+          "oklch(45% 0.0119 155.5)",
+          "oklch(60% 0.0131 155.5)",
+          "oklch(72% 0.0101 155.5)",
+          "oklch(85% 0.0067 155.5)",
+          "oklch(95% 0.0042 155.5)"
+        ]
       },
       "error": {
-        "displayName": "Error red"
+        "role": "error",
+        "displayName": "Error red",
+        "tonalRamp": [
+          "oklch(15% 0.0454 26.8)",
+          "oklch(25% 0.0733 26.8)",
+          "oklch(35% 0.1012 26.8)",
+          "oklch(45% 0.1292 26.8)",
+          "oklch(60% 0.1431 26.8)",
+          "oklch(72% 0.1096 26.8)",
+          "oklch(85% 0.0733 26.8)",
+          "oklch(95% 0.0454 26.8)"
+        ]
       },
-      "warning": {
-        "displayName": "Warning brown"
-      },
-      "web-primary-hover": {
+      "hover": {
         "role": "neutral",
-        "displayName": "Browser primary hover"
+        "displayName": "Hover mint",
+        "tonalRamp": [
+          "oklch(15% 0.0036 157.0)",
+          "oklch(25% 0.0058 157.0)",
+          "oklch(35% 0.0080 157.0)",
+          "oklch(45% 0.0102 157.0)",
+          "oklch(60% 0.0113 157.0)",
+          "oklch(72% 0.0087 157.0)",
+          "oklch(85% 0.0058 157.0)",
+          "oklch(95% 0.0036 157.0)"
+        ]
       },
-      "web-step-hover": {
-        "role": "neutral",
-        "displayName": "Browser step hover"
+      "primary-hover": {
+        "role": "primary",
+        "displayName": "Deep forest hover",
+        "tonalRamp": [
+          "oklch(15% 0.0194 160.4)",
+          "oklch(25% 0.0313 160.4)",
+          "oklch(35% 0.0432 160.4)",
+          "oklch(45% 0.0552 160.4)",
+          "oklch(60% 0.0611 160.4)",
+          "oklch(72% 0.0468 160.4)",
+          "oklch(85% 0.0313 160.4)",
+          "oklch(95% 0.0194 160.4)"
+        ]
       },
-      "web-disabled-button": {
+      "plan-ink": {
         "role": "neutral",
-        "displayName": "Browser disabled button"
+        "displayName": "Plan green-gray",
+        "tonalRamp": [
+          "oklch(15% 0.0100 156.9)",
+          "oklch(25% 0.0162 156.9)",
+          "oklch(35% 0.0223 156.9)",
+          "oklch(45% 0.0285 156.9)",
+          "oklch(60% 0.0316 156.9)",
+          "oklch(72% 0.0242 156.9)",
+          "oklch(85% 0.0162 156.9)",
+          "oklch(95% 0.0100 156.9)"
+        ]
       },
-      "web-disabled-text": {
+      "badge-free": {
         "role": "neutral",
-        "displayName": "Browser disabled button text"
+        "displayName": "Free badge fill",
+        "tonalRamp": [
+          "oklch(15% 0.0019 160.1)",
+          "oklch(25% 0.0031 160.1)",
+          "oklch(35% 0.0043 160.1)",
+          "oklch(45% 0.0055 160.1)",
+          "oklch(60% 0.0061 160.1)",
+          "oklch(72% 0.0046 160.1)",
+          "oklch(85% 0.0031 160.1)",
+          "oklch(95% 0.0019 160.1)"
+        ]
       },
-      "web-disabled-border": {
+      "badge-free-ink": {
         "role": "neutral",
-        "displayName": "Browser disabled border"
+        "displayName": "Free badge ink",
+        "tonalRamp": [
+          "oklch(15% 0.0083 158.1)",
+          "oklch(25% 0.0134 158.1)",
+          "oklch(35% 0.0186 158.1)",
+          "oklch(45% 0.0237 158.1)",
+          "oklch(60% 0.0262 158.1)",
+          "oklch(72% 0.0201 158.1)",
+          "oklch(85% 0.0134 158.1)",
+          "oklch(95% 0.0083 158.1)"
+        ]
       },
-      "web-disabled-field": {
+      "badge-pro": {
         "role": "neutral",
-        "displayName": "Browser disabled field"
+        "displayName": "Pro badge fill",
+        "tonalRamp": [
+          "oklch(15% 0.0060 156.8)",
+          "oklch(25% 0.0097 156.8)",
+          "oklch(35% 0.0134 156.8)",
+          "oklch(45% 0.0171 156.8)",
+          "oklch(60% 0.0189 156.8)",
+          "oklch(72% 0.0145 156.8)",
+          "oklch(85% 0.0097 156.8)",
+          "oklch(95% 0.0060 156.8)"
+        ]
       },
-      "web-disabled-field-text": {
+      "badge-pro-ink": {
         "role": "neutral",
-        "displayName": "Browser disabled field text"
+        "displayName": "Pro badge ink",
+        "tonalRamp": [
+          "oklch(15% 0.0179 160.1)",
+          "oklch(25% 0.0289 160.1)",
+          "oklch(35% 0.0400 160.1)",
+          "oklch(45% 0.0510 160.1)",
+          "oklch(60% 0.0565 160.1)",
+          "oklch(72% 0.0433 160.1)",
+          "oklch(85% 0.0289 160.1)",
+          "oklch(95% 0.0179 160.1)"
+        ]
+      },
+      "workflow-disabled": {
+        "role": "neutral",
+        "displayName": "Disabled workflow",
+        "tonalRamp": [
+          "oklch(15% 0.0012 157.2)",
+          "oklch(25% 0.0019 157.2)",
+          "oklch(35% 0.0027 157.2)",
+          "oklch(45% 0.0034 157.2)",
+          "oklch(60% 0.0038 157.2)",
+          "oklch(72% 0.0029 157.2)",
+          "oklch(85% 0.0019 157.2)",
+          "oklch(95% 0.0012 157.2)"
+        ]
+      },
+      "disabled-button": {
+        "role": "neutral",
+        "displayName": "Disabled button",
+        "tonalRamp": [
+          "oklch(15% 0.0027 150.7)",
+          "oklch(25% 0.0043 150.7)",
+          "oklch(35% 0.0060 150.7)",
+          "oklch(45% 0.0076 150.7)",
+          "oklch(60% 0.0084 150.7)",
+          "oklch(72% 0.0065 150.7)",
+          "oklch(85% 0.0043 150.7)",
+          "oklch(95% 0.0027 150.7)"
+        ]
+      },
+      "disabled-button-ink": {
+        "role": "neutral",
+        "displayName": "Disabled button ink",
+        "tonalRamp": [
+          "oklch(15% 0.0058 153.2)",
+          "oklch(25% 0.0093 153.2)",
+          "oklch(35% 0.0129 153.2)",
+          "oklch(45% 0.0164 153.2)",
+          "oklch(60% 0.0182 153.2)",
+          "oklch(72% 0.0139 153.2)",
+          "oklch(85% 0.0093 153.2)",
+          "oklch(95% 0.0058 153.2)"
+        ]
+      },
+      "disabled-border": {
+        "role": "neutral",
+        "displayName": "Disabled outline",
+        "tonalRamp": [
+          "oklch(15% 0.0041 155.6)",
+          "oklch(25% 0.0067 155.6)",
+          "oklch(35% 0.0092 155.6)",
+          "oklch(45% 0.0118 155.6)",
+          "oklch(60% 0.0131 155.6)",
+          "oklch(72% 0.0100 155.6)",
+          "oklch(85% 0.0067 155.6)",
+          "oklch(95% 0.0041 155.6)"
+        ]
+      },
+      "disabled-field": {
+        "role": "neutral",
+        "displayName": "Disabled field",
+        "tonalRamp": [
+          "oklch(15% 0.0024 157.1)",
+          "oklch(25% 0.0039 157.1)",
+          "oklch(35% 0.0053 157.1)",
+          "oklch(45% 0.0068 157.1)",
+          "oklch(60% 0.0076 157.1)",
+          "oklch(72% 0.0058 157.1)",
+          "oklch(85% 0.0039 157.1)",
+          "oklch(95% 0.0024 157.1)"
+        ]
+      },
+      "disabled-field-ink": {
+        "role": "neutral",
+        "displayName": "Disabled field ink",
+        "tonalRamp": [
+          "oklch(15% 0.0066 154.5)",
+          "oklch(25% 0.0106 154.5)",
+          "oklch(35% 0.0147 154.5)",
+          "oklch(45% 0.0187 154.5)",
+          "oklch(60% 0.0208 154.5)",
+          "oklch(72% 0.0159 154.5)",
+          "oklch(85% 0.0106 154.5)",
+          "oklch(95% 0.0066 154.5)"
+        ]
       }
     },
     "typographyMeta": {
+      "display": {
+        "displayName": "Template welcome",
+        "purpose": "Editorial welcome on Template only; hidden during Settings and Export."
+      },
+      "page-display": {
+        "displayName": "Page display",
+        "purpose": "Saved projects and Free & Pro page headings."
+      },
       "title": {
-        "displayName": "Screen title",
-        "purpose": "Native screen headings."
+        "displayName": "Workspace heading",
+        "purpose": "Compact Manrope heading above the current task."
       },
       "body": {
-        "displayName": "Body",
-        "purpose": "Native labels and editable values."
+        "displayName": "Interface body",
+        "purpose": "Base browser typography and inherited controls."
+      },
+      "intro": {
+        "displayName": "Introduction",
+        "purpose": "Focused explanation beneath a task heading."
       },
       "button": {
-        "displayName": "Button",
-        "purpose": "Native action labels."
-      },
-      "guidance": {
-        "displayName": "Guidance",
-        "purpose": "Short introductions and the rail product statement. Georgia is loaded from Windows; failed loading falls back to the proportional family."
-      },
-      "template-title": {
-        "displayName": "Template title",
-        "purpose": "Workflow choice titles."
-      },
-      "template-guidance": {
-        "displayName": "Template guidance",
-        "purpose": "Short serif descriptions inside workflow choices."
-      },
-      "small": {
-        "displayName": "Small",
-        "purpose": "Help text, summary labels and privacy notes."
-      },
-      "web-body": {
-        "displayName": "Browser body",
-        "purpose": "Browser document and field text."
-      },
-      "web-title": {
-        "displayName": "Browser workspace title",
-        "purpose": "Responsive workspace headings."
-      },
-      "web-guidance": {
-        "displayName": "Browser guidance",
-        "purpose": "Georgia introductions."
-      },
-      "web-button": {
-        "displayName": "Browser action",
+        "displayName": "Action",
         "purpose": "Primary and secondary button labels."
       },
-      "web-field-label": {
-        "displayName": "Browser field label",
-        "purpose": "Explicit visible input labels."
+      "workflow-title": {
+        "displayName": "Workflow title",
+        "purpose": "Bold label inside a semantic radio choice."
       },
-      "web-badge": {
-        "displayName": "Browser plan badge",
-        "purpose": "Free and Pro preview badges."
+      "workflow-description": {
+        "displayName": "Workflow description",
+        "purpose": "Supporting sans-serif copy, 13px by default and 12px compact/mobile."
+      },
+      "label": {
+        "displayName": "Field label",
+        "purpose": "Visible input labels."
+      },
+      "badge": {
+        "displayName": "Plan badge",
+        "purpose": "Written Free/Pro status."
+      },
+      "plan-label": {
+        "displayName": "Plan label",
+        "purpose": "Compact notebook summary labels."
+      },
+      "plan-value": {
+        "displayName": "Plan value",
+        "purpose": "Semibold summary values with tabular numbers."
       }
     },
     "shadows": [
       {
-        "name": "native-popup",
-        "value": "egui Shadow { offset: [6, 10], blur: 8, spread: 0, color: black alpha 25/255 }",
-        "purpose": "Inherited egui 0.37 light-theme popup default. Main panels and workflow choices do not use this shadow."
-      },
-      {
-        "name": "web-status-toast",
-        "value": "0 8px 28px #17201f26",
-        "purpose": "The fixed browser status toast; other browser surfaces remain flat."
+        "name": "status-toast",
+        "value": "0 8px 28px #17251f26",
+        "purpose": "Transient fixed status feedback; working surfaces remain flat."
       }
     ],
     "motion": [
       {
-        "name": "native-widget-animation",
-        "value": "0.2s",
-        "purpose": "Inherited egui Style.animation_time, without a custom easing or motion system."
+        "name": "control-colors",
+        "value": "background-color 150ms ease, border-color 150ms ease",
+        "purpose": "Buttons and workflow choices only when prefers-reduced-motion is no-preference."
       },
       {
-        "name": "web-control-colors",
-        "value": "background-color 120ms ease, border-color 120ms ease",
-        "purpose": "Button states, only when prefers-reduced-motion is no-preference."
-      },
-      {
-        "name": "web-workflow-border",
-        "value": "border-color 120ms ease",
-        "purpose": "Workflow border states, only when prefers-reduced-motion is no-preference."
-      },
-      {
-        "name": "web-toast-entry",
-        "value": "translate 0 8px to 0 0; 160ms ease-out",
-        "purpose": "Status toast entry, only when prefers-reduced-motion is no-preference."
+        "name": "toast-entry",
+        "value": "translate 0 8px to 0 0; clip-path inset(0 0 8px) to inset(0); 180ms cubic-bezier(.16,1,.3,1)",
+        "purpose": "Fixed toast entry only when prefers-reduced-motion is no-preference."
       }
     ],
     "breakpoints": [
       {
-        "name": "web-wide-min",
-        "value": "1450px"
+        "name": "wide-min",
+        "value": "1500px"
       },
       {
-        "name": "web-compact-max",
-        "value": "1050px"
+        "name": "compact-max",
+        "value": "1100px"
       },
       {
-        "name": "web-single-column-max",
-        "value": "850px"
+        "name": "single-column-max",
+        "value": "760px"
       },
       {
-        "name": "web-small-max",
+        "name": "small-max",
         "value": "450px"
       }
     ]
@@ -198,135 +405,115 @@
     {
       "name": "Primary action",
       "kind": "button",
-      "refersTo": "button-primary",
-      "description": "Shadow-DOM illustration of the native button; explicit deep-green fill and white text persist through interaction. Native egui remains the behavior source.",
+      "description": "Forest action with the actual CSS chevron, hover and keyboard focus.",
       "html": "<button class=\"ds-primary\">Continue to settings</button>",
-      "css": ".ds-primary { font-family: 'Segoe UI', sans-serif; font-size: 16px; color: #ffffff; background: #253d36; border: 1px solid #ccc9b9; border-radius: 6px; padding: 9px 14px; min-height: 36px; } .ds-primary:hover { border-color: #696969; } .ds-primary:focus-visible, .ds-primary:active { border-color: #000000; outline: none; } .ds-primary:disabled { opacity: 0.5; }"
+      "css": ".ds-primary{font-family:Manrope,'Segoe UI',sans-serif;line-height:1.6;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:10px 20px;border:1px solid var(--border,#cbd5ce);border-radius:8px;font-size:13px;font-weight:700;line-height:1.5;cursor:pointer;text-decoration:none;background:var(--accent,#235d43);color:white;border-color:var(--accent,#235d43)}.ds-primary:after{content:\"\";width:7px;height:7px;flex:none;border-top:1.5px solid currentColor;border-right:1.5px solid currentColor;transform:rotate(45deg);margin-left:12px}.ds-primary:hover{background:#194b34;border-color:#194b34}.ds-primary:focus-visible{outline:3px solid var(--accent,#235d43);outline-offset:4px;}.ds-primary:disabled{background:#e2e8e3;color:#67736a;border-color:#d1dbd4;cursor:not-allowed;}@media(prefers-reduced-motion:no-preference){.ds-primary{transition:background-color 150ms ease,border-color 150ms ease}}",
+      "refersTo": "button-primary"
     },
     {
       "name": "Secondary action",
       "kind": "button",
-      "refersTo": "button-secondary",
-      "description": "Shadow-DOM illustration of an ordinary native button, with the observed warm hover and pressed fills.",
-      "html": "<button class=\"ds-secondary\">Choose image…</button>",
-      "css": ".ds-secondary { font-family: 'Segoe UI', sans-serif; font-size: 16px; color: #17201f; background: #fffdf7; border: 1px solid #ccc9b9; border-radius: 6px; padding: 9px 14px; min-height: 36px; } .ds-secondary:hover { background: #efe6c6; border-color: #696969; } .ds-secondary:focus-visible, .ds-secondary:active { background: #e6dbb3; border-color: #000000; outline: none; } .ds-secondary:disabled { opacity: 0.5; }"
+      "description": "White outlined action with mint hover, including visible focus and disabled states.",
+      "html": "<button class=\"ds-secondary\">Save project</button>",
+      "css": ".ds-secondary{font-family:Manrope,'Segoe UI',sans-serif;line-height:1.6;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:10px 20px;border:1px solid var(--border,#cbd5ce);border-radius:8px;font-size:13px;font-weight:700;line-height:1.5;cursor:pointer;text-decoration:none;background:var(--surface,#fff);color:var(--ink,#17251f)}.ds-secondary:hover{background:var(--hover,#e5eee8)}.ds-secondary:focus-visible{outline:3px solid var(--accent,#235d43);outline-offset:4px;}.ds-secondary:disabled{background:#e2e8e3;color:#67736a;border-color:#d1dbd4;cursor:not-allowed;}@media(prefers-reduced-motion:no-preference){.ds-secondary{transition:background-color 150ms ease,border-color 150ms ease}}",
+      "refersTo": "button-secondary"
     },
     {
-      "name": "Text field",
+      "name": "Labelled field",
       "kind": "input",
-      "refersTo": "text-field",
-      "description": "Shadow-DOM illustration of a labelled native text field; white background and native state strokes come from the pinned egui light theme.",
-      "html": "<label class=\"ds-field\">Project name<input class=\"ds-text\" value=\"My H3 video\" /></label>",
-      "css": ".ds-field { display: grid; gap: 10px; font-family: 'Segoe UI', sans-serif; font-size: 16px; color: #17201f; } .ds-text { font-family: 'Segoe UI', sans-serif; font-size: 16px; color: #17201f; background: #ffffff; border: 1px solid #ccc9b9; border-radius: 6px; } .ds-text:hover { border-color: #696969; } .ds-text:focus-visible { border-color: #000000; outline: none; } .ds-text::selection { color: #ffffff; background: #253d36; } .ds-text:disabled { opacity: 0.5; }"
+      "description": "Visible label and full-width browser field with 46px minimum height.",
+      "html": "<div class=\"ds-field\"><label for=\"ds-project\">Project name</label><input id=\"ds-project\" value=\"My MiniMax video\"></div>",
+      "css": ".ds-field{font-family:Manrope,'Segoe UI',sans-serif;line-height:1.6;display:grid;gap:8px;color:var(--ink,#17251f)}.ds-field label{font-size:12px;font-weight:750}.ds-field input{font-family:Manrope,'Segoe UI',sans-serif;line-height:1.6;width:100%;background:white;color:var(--ink,#17251f);border:1px solid var(--border,#cbd5ce);border-radius:8px;padding:12px 14px;min-height:46px;font-size:14px;caret-color:var(--accent,#235d43)}.ds-field input:hover{border-color:#93a69a}.ds-field input:focus-visible{outline:3px solid var(--accent,#235d43);outline-offset:4px;}.ds-field input:disabled{background:#eaf0ec;color:#647268;opacity:1}@media(max-width:450px){.ds-field input{font-size:16px}}",
+      "refersTo": "field"
     },
     {
-      "name": "Progress rail",
+      "name": "Header navigation",
       "kind": "nav",
-      "refersTo": "progress-tab",
-      "description": "Shadow-DOM illustration of the three native step buttons. The selected square backing reaches the yellow rail edge; all rail text uses ink.",
-      "html": "<nav class=\"ds-rail\" aria-label=\"Builder steps\"><button class=\"ds-step ds-current\" aria-current=\"step\">1  Template</button><button class=\"ds-step\">2  Settings</button><button class=\"ds-step\">3  Export/upload</button></nav>",
-      "css": ".ds-rail { width: 157px; padding: 24px; display: grid; gap: 10px; background: #f4c62a; } .ds-step { position: relative; min-width: 155px; min-height: 44px; padding: 9px 14px; font-family: 'Segoe UI', sans-serif; font-size: 16px; color: #17201f; background: #f4c62a; border: none; border-radius: 6px; } .ds-current { background: #fffdf7; } .ds-current::before { position: absolute; inset: 0 -24px 0 0; background: #fffdf7; content: ''; z-index: -1; } .ds-step:hover { color: #17201f; } .ds-step:focus-visible { outline: 1px solid #000000; } .ds-step:active { color: #17201f; } .ds-step:disabled { opacity: 0.5; }"
+      "description": "Restrained Manrope route links; the current route is ink with a small green dot.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Main navigation\"><a href=\"#builder\" aria-current=\"page\">Builder</a><a href=\"#projects\">Saved projects</a><a href=\"#plans\">Free &amp; Pro</a></nav>",
+      "css": ".ds-nav{font-family:Manrope,'Segoe UI',sans-serif;line-height:1.6;display:flex;flex-wrap:wrap;gap:30px;padding:18px 0;background:var(--surface,#fff)}.ds-nav a{text-decoration:none;color:var(--muted,#58645d);font-size:13px;font-weight:600;padding:10px 0;position:relative;white-space:nowrap}.ds-nav a[aria-current=page]{color:var(--ink,#17251f)}.ds-nav a[aria-current=page]:after{content:\"\";position:absolute;bottom:1px;left:calc(50% - 2px);width:4px;height:4px;border-radius:50%;background:var(--accent,#235d43)}.ds-nav a:focus-visible{outline:3px solid var(--accent,#235d43);outline-offset:4px;}"
     },
     {
-      "name": "Workflow choice",
+      "name": "Numbered stepper",
+      "kind": "nav",
+      "description": "Horizontal task navigation with dark current number and fine desktop connectors.",
+      "html": "<nav class=\"ds-steps\" aria-label=\"Builder steps\"><button class=\"ds-step\" aria-current=\"step\"><span class=\"ds-number\">1</span>Template</button><button class=\"ds-step\"><span class=\"ds-number\">2</span>Settings</button><button class=\"ds-step\"><span class=\"ds-number\">3</span>Export / upload</button></nav>",
+      "css": ".ds-steps{font-family:Manrope,'Segoe UI',sans-serif;line-height:1.6;display:flex;flex-wrap:wrap;gap:25px;align-items:center;border-block:1px solid var(--border,#cbd5ce);min-height:75px;background:var(--ground,#f4f7f5)}.ds-step{font-family:Manrope,'Segoe UI',sans-serif;line-height:1.6;border:0;display:flex;align-items:center;gap:10px;min-height:50px;padding:10px 4px;background:transparent;color:var(--muted,#58645d);font-size:13px;font-weight:600;cursor:pointer}.ds-step+.ds-step:before{content:\"\";width:26px;height:1px;background:var(--border,#cbd5ce);margin-right:9px}.ds-number{font-size:11px;display:inline-flex;align-items:center;justify-content:center;width:25px;height:25px;border:1px solid var(--border,#cbd5ce);border-radius:50%;font-variant-numeric:tabular-nums}.ds-step[aria-current=step]{color:var(--ink,#17251f)}.ds-step[aria-current=step] .ds-number{background:var(--ink,#17251f);color:white;border-color:var(--ink,#17251f)}.ds-step:hover{color:var(--accent,#235d43)}.ds-step:focus-visible{outline:3px solid var(--accent,#235d43);outline-offset:4px;}@media(max-width:760px){.ds-steps{gap:12px;justify-content:space-between}.ds-step{font-size:11px;gap:8px;padding:8px 0}.ds-step+.ds-step:before{display:none}.ds-number{width:23px;height:23px}}@media(max-width:450px){.ds-step{font-size:10px;gap:6px}}",
+      "refersTo": "progress-number-current"
+    },
+    {
+      "name": "Geometric workflow radio",
       "kind": "card",
-      "refersTo": "workflow-selected",
-      "description": "Shadow-DOM illustration of the selected 105-high native workflow button, with its UI title and serif guidance. The native source supplies layout and interaction.",
-      "html": "<button class=\"ds-workflow\" aria-pressed=\"true\"><span class=\"ds-workflow-title\">Text to video</span><span class=\"ds-workflow-help\">Describe a scene, motion and sound. No input image needed.</span></button>",
-      "css": ".ds-workflow { width: 100%; height: 105px; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 9px 14px; background: #fff9db; color: #17201f; border: 2px solid #253d36; border-radius: 6px; } .ds-workflow-title { font-family: 'Segoe UI', sans-serif; font-size: 18px; } .ds-workflow-help { font-family: Georgia, serif; font-size: 15px; color: #586052; } .ds-workflow:hover { border-color: #253d36; } .ds-workflow:focus-visible { outline: 1px solid #000000; } .ds-workflow:active { background: #fff9db; }"
+      "description": "Actual text-to-video illustration and semantic radio choice; green selection changes fill and border color without changing thickness.",
+      "html": "<label class=\"ds-workflow\"><span class=\"ds-workflow-top\"><input type=\"radio\" name=\"ds-workflow\" checked><span class=\"ds-free\">Free</span></span><svg class=\"ds-art\" viewBox=\"0 0 180 86\" aria-hidden=\"true\"><path d=\"M21 33h39M21 43h30M21 53h35\"/><path d=\"M77 43h24m-6-5 6 5-6 5\"/><rect x=\"116\" y=\"22\" width=\"46\" height=\"42\" rx=\"5\"/><path d=\"m135 35 12 8-12 8z\"/></svg><span class=\"ds-workflow-copy\"><strong>Text to video</strong><span class=\"ds-description\">Describe a scene, motion and sound. Start with the basic MiniMax H3 notebook.</span></span></label>",
+      "css": ".ds-workflow{font-family:Manrope,'Segoe UI',sans-serif;line-height:1.6;display:flex;flex-direction:column;padding:18px 16px 22px;background:var(--surface,#fff);border:1px solid var(--border,#cbd5ce);border-radius:var(--radius,14px);color:var(--ink,#17251f);cursor:pointer;min-width:0}.ds-workflow:has(input:checked){border-color:var(--accent,#235d43);background:var(--selected,#edf7f0)}.ds-workflow:has(input:focus-visible){outline:3px solid var(--accent,#235d43);outline-offset:4px;}.ds-workflow:has(input:enabled):hover{border-color:var(--accent,#235d43)}.ds-workflow-top{display:flex;justify-content:space-between;align-items:center;gap:8px}.ds-workflow input{margin:0;accent-color:var(--accent,#235d43);width:17px;height:17px}.ds-art{width:100%;height:auto;max-height:100px;margin:18px 0 20px;stroke:#6c8173;stroke-width:1.3;fill:none;stroke-linecap:round;stroke-linejoin:round}.ds-workflow:has(input:checked) .ds-art{stroke:var(--accent,#235d43)}.ds-workflow strong{font-size:16px;font-weight:750;letter-spacing:-.025em;display:block;margin-bottom:9px}.ds-description{color:var(--muted,#58645d);font-size:13px;display:block;line-height:1.8}.ds-free{font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px;background:#e9eeeb;color:#425449}.ds-workflow:has(input:disabled){cursor:default;background:#f0f3f1}.ds-workflow:has(input:disabled) .ds-art{stroke:#86948b}@media(min-width:1500px){.ds-workflow{padding:22px}.ds-workflow strong{font-size:18px}.ds-description{font-size:13px}}@media(max-width:1100px){.ds-workflow{display:grid;grid-template-columns:80px minmax(0,1fr) 55px;align-items:center;gap:14px;padding:18px}.ds-workflow-top{grid-column:3;grid-row:1;flex-direction:column;gap:10px}.ds-art{grid-column:1;grid-row:1;margin:0}.ds-workflow-copy{grid-column:2;grid-row:1}.ds-workflow strong{margin-bottom:3px}.ds-description{font-size:12px}}@media(max-width:760px){.ds-workflow{grid-template-columns:75px minmax(0,1fr) 44px;gap:14px;padding:17px}.ds-workflow strong{font-size:16px}.ds-description{font-size:12px;line-height:1.7}.ds-free{font-size:10px;padding:2px 7px}}@media(max-width:450px){.ds-workflow{grid-template-columns:54px minmax(0,1fr) 36px;gap:10px;padding:16px 12px}.ds-workflow strong{font-size:15px}.ds-art{width:62px;margin-left:-4px}.ds-free{font-size:10px;padding:2px 6px}}@media(prefers-reduced-motion:no-preference){.ds-workflow{transition:background-color 150ms ease,border-color 150ms ease}}",
+      "refersTo": "workflow-selected"
     },
     {
-      "name": "Notebook plan",
+      "name": "Mint notebook plan",
       "kind": "custom",
-      "refersTo": "notebook-summary",
-      "description": "Shadow-DOM illustration of the native summary pane's tonal surface and label/value pairing; the application updates and scrolls it independently.",
-      "html": "<aside class=\"ds-plan\"><div class=\"ds-plan-title\">Notebook plan</div><div class=\"ds-plan-label\">Workflow</div><div class=\"ds-plan-value\">Text to video</div><div class=\"ds-plan-label\">Output</div><div class=\"ds-plan-value\">1344 × 768</div><div class=\"ds-plan-help\">GPU execution happens in Colab. No local GPU needed for this builder.</div></aside>",
-      "css": ".ds-plan { width: 191px; padding: 22px; background: #eee9dc; color: #17201f; font-family: 'Segoe UI', sans-serif; font-size: 16px; border-radius: 0; } .ds-plan-title { font-size: 19px; margin-bottom: 20px; } .ds-plan-label { color: #586052; font-size: 13px; margin-bottom: 10px; } .ds-plan-value { margin-bottom: 22px; } .ds-plan-help { color: #586052; font-size: 13px; }"
+      "description": "Rounded tonal plan surface with compact, aligned labels and values; no decorative shadow.",
+      "html": "<aside class=\"ds-plan\"><h2>Notebook plan</h2><dl><div><dt>Workflow</dt><dd>Text to video</dd></div><div><dt>Model</dt><dd>MiniMax H3</dd></div><div><dt>Video output</dt><dd>1344 × 768<br><small>5.17 seconds · 24 fps</small></dd></div></dl><div class=\"ds-handoff\">Template → notebook → Colab</div><p class=\"ds-plan-note\">Projects save in this browser. Generation uses your own Colab account and compute.</p></aside>",
+      "css": ".ds-plan{font-family:Manrope,'Segoe UI',sans-serif;line-height:1.6;padding:27px 23px;background:var(--summary,#e6eee9);border-radius:16px;color:var(--ink,#17251f);min-width:0}.ds-plan h2{font-size:18px;font-weight:700;letter-spacing:-.03em;margin:0 0 20px;padding-bottom:20px;border-bottom:1px solid #c7d7cc}.ds-plan dl{margin:0}.ds-plan dl div{display:grid;grid-template-columns:90px minmax(0,1fr);gap:12px;margin-bottom:18px;align-items:baseline}.ds-plan dt{font-size:11px;color:#4f6557}.ds-plan dd{margin:0;font-size:12px;font-weight:650;overflow-wrap:anywhere;font-variant-numeric:tabular-nums;text-align:right}.ds-plan small{font-size:11px;font-weight:500;color:#4f6557}.ds-handoff{padding:16px 0;border-top:1px solid #c7d7cc;font-size:11px;color:#4f6557}.ds-plan-note{font-size:11px;line-height:1.8;margin:14px 0 0;color:#4f6557}@media(max-width:760px){.ds-plan dl{display:grid;grid-template-columns:1fr 1fr;gap:0 30px}.ds-plan dl div{display:block;margin-bottom:20px}.ds-plan dt{margin-bottom:4px}.ds-plan dd{text-align:left}}",
+      "refersTo": "notebook-plan"
     },
     {
-      "name": "Browser primary action",
-      "kind": "button",
-      "refersTo": "web-button-primary",
-      "description": "Browser CSS primary action. Variables use the browser custom properties with literal fallbacks for an isolated preview.",
-      "html": "<button class=\"ds-web-primary\">Download .ipynb</button>",
-      "css": ".ds-web-primary{font-family:'Segoe UI',system-ui,sans-serif;font-size:16px;display:inline-flex;justify-content:center;align-items:center;gap:8px;min-height:43px;padding:9px 16px;border:1px solid var(--border,#ccc9b9);border-radius:var(--radius,6px);background:var(--surface,#fffdf7);color:var(--ink,#17201f);text-decoration:none;font-weight:550;line-height:1.4;cursor:pointer;background:var(--accent,#253d36);color:white;border-color:var(--accent,#253d36)}.ds-web-primary:hover{background:#344e43}.ds-web-primary:focus-visible{outline:3px solid var(--accent,#253d36);outline-offset:4px;}.ds-web-primary:disabled{background:#eeeade;color:#76786c;border-color:#d9d5c6;cursor:not-allowed}@media(prefers-reduced-motion:no-preference){.ds-web-primary{transition:background-color 120ms ease,border-color 120ms ease}}"
-    },
-    {
-      "name": "Browser secondary action",
-      "kind": "button",
-      "refersTo": "web-button-secondary",
-      "description": "Browser secondary action with actual warm hover and visible keyboard focus.",
-      "html": "<button class=\"ds-web-secondary\">Save project</button>",
-      "css": ".ds-web-secondary{font-family:'Segoe UI',system-ui,sans-serif;font-size:16px;display:inline-flex;justify-content:center;align-items:center;gap:8px;min-height:43px;padding:9px 16px;border:1px solid var(--border,#ccc9b9);border-radius:var(--radius,6px);background:var(--surface,#fffdf7);color:var(--ink,#17201f);text-decoration:none;font-weight:550;line-height:1.4;cursor:pointer;}.ds-web-secondary:hover{background:var(--hover,#efe6c6)}.ds-web-secondary:focus-visible{outline:3px solid var(--accent,#253d36);outline-offset:4px;}.ds-web-secondary:disabled{background:#eeeade;color:#76786c;border-color:#d9d5c6;cursor:not-allowed}@media(prefers-reduced-motion:no-preference){.ds-web-secondary{transition:background-color 120ms ease,border-color 120ms ease}}"
-    },
-    {
-      "name": "Browser text field",
-      "kind": "input",
-      "refersTo": "web-field",
-      "description": "Actual browser field styling with explicit label, disabled fill and focus treatment.",
-      "html": "<div class=\"ds-web-field\"><label for=\"ds-web-project\">Project name</label><input id=\"ds-web-project\" value=\"My MiniMax video\" /></div>",
-      "css": ".ds-web-field{display:grid;gap:7px;margin-bottom:20px;font-family:'Segoe UI',system-ui,sans-serif;font-size:16px;line-height:1.5;color:var(--ink,#17201f)}.ds-web-field label{font-size:14px;font-weight:600}.ds-web-field input{font:inherit;width:100%;background:white;color:var(--ink,#17201f);border:1px solid var(--border,#ccc9b9);border-radius:6px;padding:10px 12px;min-height:44px;caret-color:var(--accent,#253d36)}.ds-web-field input:focus-visible{outline:3px solid var(--accent,#253d36);outline-offset:4px;}.ds-web-field input:disabled{background:#f0ecdf;color:#727568;opacity:1}"
-    },
-    {
-      "name": "Browser workflow radio",
-      "kind": "card",
-      "refersTo": "web-workflow-selected",
-      "description": "Selected browser workflow with semantic radio, serif guidance and Free badge. Checked border thickness is offset by padding.",
-      "html": "<label class=\"ds-web-workflow\"><input type=\"radio\" name=\"ds-web-workflow\" checked><span><strong>Text to video</strong><span class=\"ds-web-description\">Describe a scene, motion and sound.</span></span><span class=\"ds-web-free\">Free</span></label>",
-      "css": ".ds-web-workflow{font-family:'Segoe UI',system-ui,sans-serif;font-size:16px;line-height:1.5;color:var(--ink,#17201f);display:grid;grid-template-columns:22px minmax(0,1fr) auto;align-items:start;gap:16px;padding:22px;background:var(--surface,#fffdf7);border:1px solid var(--border,#ccc9b9);border-radius:var(--radius,6px);cursor:pointer}.ds-web-workflow:has(input:checked){border:2px solid var(--accent,#253d36);padding:21px;background:var(--selected,#fff9db)}.ds-web-workflow input{margin:6px 0 0;accent-color:var(--accent,#253d36);width:17px;height:17px}.ds-web-workflow input:focus-visible{outline:3px solid var(--accent,#253d36);outline-offset:4px;}.ds-web-workflow strong{font-size:19px;font-weight:600;display:block;margin-bottom:5px}.ds-web-description{font-family:Georgia,serif;color:var(--muted,#586052);font-size:15px;display:block;line-height:1.55}.ds-web-free{font-size:12px;font-weight:650;padding:3px 9px;border:1px solid var(--border,#ccc9b9);border-radius:4px;background:var(--surface,#fffdf7);margin-top:3px}@media(max-width:450px){.ds-web-workflow{grid-template-columns:18px minmax(0,1fr);gap:10px}.ds-web-free{grid-column:2;justify-self:start;margin:0}}@media(prefers-reduced-motion:no-preference){.ds-web-workflow{transition:border-color 120ms ease}}"
-    },
-    {
-      "name": "Browser Pro preview badge",
+      "name": "Pro preview badge",
       "kind": "chip",
-      "refersTo": "web-badge-pro",
-      "description": "Noninteractive yellow plan badge; preview status is text, not a claim of an active subscription.",
-      "html": "<span class=\"ds-web-pro\">Pro preview</span>",
-      "css": ".ds-web-pro{font-family:'Segoe UI',system-ui,sans-serif;font-size:16px;display:inline-block;font-size:12px;font-weight:650;padding:3px 9px;border:1px solid var(--rail,#f4c62a);border-radius:4px;background:var(--rail,#f4c62a);color:var(--ink,#17201f);vertical-align:middle}"
+      "description": "Noninteractive pale green pill, explicitly labelled as a preview.",
+      "html": "<span class=\"ds-pro\">Pro preview</span>",
+      "css": ".ds-pro{font-family:Manrope,'Segoe UI',sans-serif;line-height:1.6;display:inline-block;font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px;background:#dcebe1;color:#28543e;vertical-align:middle;white-space:nowrap}",
+      "refersTo": "badge-pro"
+    },
+    {
+      "name": "Header preview action",
+      "kind": "button",
+      "description": "Ink-filled pill used for the preview entry; forest hover keeps it distinct from the main work action.",
+      "html": "<button class=\"ds-preview\">Preview Pro</button>",
+      "css": ".ds-preview{font-family:Manrope,'Segoe UI',sans-serif;line-height:1.6;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:10px 20px;border:1px solid var(--border,#cbd5ce);border-radius:8px;font-size:13px;font-weight:700;line-height:1.5;cursor:pointer;text-decoration:none;min-height:40px;padding:10px 18px;font-size:11px;border-radius:24px;background:var(--ink,#17251f);color:white;border-color:var(--ink,#17251f)}.ds-preview:hover{background:var(--accent,#235d43)}.ds-preview:focus-visible{outline:3px solid var(--accent,#235d43);outline-offset:4px;}.ds-preview:disabled{background:#e2e8e3;color:#67736a;border-color:#d1dbd4;cursor:not-allowed;}@media(prefers-reduced-motion:no-preference){.ds-preview{transition:background-color 150ms ease,border-color 150ms ease}}"
     }
   ],
   "narrative": {
-    "northStar": "Chrome manual",
-    "overview": "A bright yellow progress rail, warm reading surfaces and dark green actions give the optional notebook companion the character of a practical printed manual. Segoe UI carries the controls; Georgia carries short guidance. The notebook remains the core product, and GPU work happens in Colab.\n\nThis documents the implemented working direction after the user's request for a bolder design. The user has not locked an exploration card; this is an observed system, not a claim of final visual approval. The source of truth is `desktop/src/main.rs`, with inherited widget behavior from the locked egui 0.37.0 dependency. Measurements use native logical pixels (egui points), scaled by desktop DPI; they are not CSS rem or fixed physical pixels.\n\nThe browser is now the primary interface; the Windows companion documented above is preserved as a native legacy reference. The browser extends the same Chrome manual working direction, without a new visual world or claim of a locked user selection. `web/style.css` owns browser styling, `web/index.html` owns the shell, and `web/app.mjs` supplies the visible builder, projects and plan states. All browser measurements below are CSS pixels; the native logical-pixel measurements above remain unchanged.\n\nThe browser retains Template → Settings → Export/upload, with a header for Builder, Saved projects and Free & Pro. Free configures a basic notebook; Pro is an advanced customization evaluation preview. Both produce editable notebooks run in the user's own Colab account. No shipping raster assets are used: the brand icon and favicon are SVG, and selected image previews are user-provided media.",
+    "northStar": "Open notebook studio",
+    "overview": "A quiet, spacious browser studio frames a practical notebook-building task. Forest green actions and a pale mint notebook plan sit on a cool near-white ground. Editorial serif headings establish a welcoming first impression; geometric sans-serif controls keep the work precise and easy to scan.\n\nThis is the implemented replacement browser world in `web/style.css`, `web/index.html` and `web/app.mjs`. The user rejected the former yellow browser direction and supplied [HackerRank](https://www.hackerrank.com/) and [Eloqwnt](https://www.eloqwnt.com/) as references. HackerRank informs the large serif/sans contrast, calm spacing and green/white relationship. Eloqwnt informs the airy geometric sans-serif typography, restrained navigation and softly rounded content surfaces. These are craft references; the application keeps its own product facts and workflow.",
     "keyCharacteristics": [
-      "Chrome-yellow orientation rail and warm neutral work surfaces.",
-      "Native Windows typography with serif guidance.",
-      "Flat panels, compact controls and a continuously visible notebook plan.",
-      "Text, borders and selection states carry meaning without shipping raster artwork.",
-      "Browser-first header, responsive step rail and flowing notebook plan.",
-      "Honest Free and Pro customization preview states.",
-      "Device-local projects and editable notebook downloads."
+      "Cool open ground, white workflow choices and a mint notebook plan.",
+      "Self-hosted Instrument Serif display typography and Manrope controls.",
+      "A horizontal stepper, geometric workflow illustrations and restrained green states.",
+      "Flat rounded surfaces, visible radio controls and clear keyboard focus."
     ],
     "rules": [
       {
-        "name": "The Rail Contrast Rule",
-        "body": "Rail text and rail hyperlinks use ink. The general green hyperlink color is used on the reading surfaces.",
+        "name": "The Written State Rule",
+        "body": "Color supports a visible radio, a current-step number, text or a disabled control; it never carries plan availability or an error by itself.",
         "section": "colors"
       },
       {
-        "name": "The Guidance Rule",
-        "body": "Use the serif family for short guidance; controls and editable text use the proportional UI family.",
+        "name": "The Task Type Rule",
+        "body": "Keep editorial scale in welcome and page headings; use the compact Manrope hierarchy for configuration and handoff.",
         "section": "typography"
+      },
+      {
+        "name": "The Flat Surface Rule",
+        "body": "Use tonal layering and border state for working surfaces; keep elevation for transient feedback.",
+        "section": "elevation & depth"
       }
     ],
     "dos": [
-      "Do retain ink text and links on the yellow rail.",
-      "Do keep control text in the UI family and short guidance in the guidance family.",
-      "Do preserve the independent work and summary scrollers at the minimum window size.",
-      "Do keep the notebook plan and the Colab handoff explicit.",
-      "Do use native control behavior and the implemented palette when extending this companion.",
-      "Do preserve the shared warm yellow palette and the existing guided sequence when adding browser screens.",
-      "Do use the actual CSS breakpoints and browser focus treatment; retain the separate native legacy measurements above.",
-      "Do show Free restrictions and Pro preview status in text as well as control states and badges.",
+      "Do use the cool ground, forest actions and mint plan when extending browser screens.",
+      "Do keep serif scale in editorial headings and task controls in Manrope.",
+      "Do preserve the top stepper, visible radio state and keyboard focus treatment.",
+      "Do follow the implemented breakpoints and let the plan flow below the workspace on mobile.",
+      "Do show Free restrictions, Pro preview status and Colab execution in text.",
       "Do describe projects as device-local and require image reselection when the file is no longer in memory."
     ],
     "donts": [
-      "Don't treat the working Chrome manual direction as a locked user selection.",
-      "Don't describe native logical pixels as web rem or add unimplemented mobile breakpoints.",
-      "Don't replace observable native states with invented CSS effects, gradients or card shadows.",
-      "Don't imply that the desktop app runs local inference or that live Google sign-in has been verified.",
-      "Don't claim an approved new visual identity, active billing, cloud sync or a verified live Drive upload.",
-      "Don't apply the native three-pane scrolling model to the responsive browser document.",
-      "Don't replace SVG branding or text-led workflow choices with undocumented shipping raster artwork."
+      "Don't restore the rejected yellow browser rail or use the native legacy appendix as the browser palette.",
+      "Don't repeat the large welcome heading above Settings or Export controls.",
+      "Don't add decorative shadows to working surfaces or remove the reduced-motion path.",
+      "Don't imply active billing, cloud sync, local inference or verified live Drive authorization/upload.",
+      "Don't treat native logical-pixel measurements as browser CSS dimensions.",
+      "Don't replace labelled SVG workflow choices with undocumented shipping raster artwork."
     ]
   }
 }
