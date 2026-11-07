@@ -34,6 +34,23 @@ Custom LoRAs must match the selected H3 family. Use an HTTPS Hugging Face `.safe
 
 Projects do not sync across devices or browser profiles. Clearing site data removes them. Download a notebook to keep a portable copy. Google tokens stay in page memory and are discarded on disconnect or when the page closes. There are no GoobleLab accounts, cloud project storage or billing in this preview.
 
+## Where data lives and how to remove it
+
+| Data | Location and lifetime | Removal |
+| --- | --- | --- |
+| Saved name, prompt, settings, image filename | This site's browser storage, across page sessions | Remove the project in Saved projects or clear this site's browser data. |
+| Selected image bytes | Page memory until replaced, removed or the page closes | Remove the image or close the page; this does not delete your original file. |
+| Google access token | Page memory for this session | Disconnect or close the page. Manage an existing OAuth grant separately in your Google account. |
+| Public Google OAuth client ID | Page memory until the page closes | Close the page; disconnecting clears the token but retains this public setup value. |
+| Downloaded notebook | Your download folder; includes the prompt/settings | Delete or move the file yourself. Local project removal does not affect it. |
+| Uploaded notebook and image | A new private folder in your Google Drive; persists after disconnect | Manage the folder in Drive. Failed uploads can leave partial folders. |
+| MP4 and `workflow_api.json` | The configured Colab output directory; workflow JSON includes the prompt/settings | Manage outputs in Drive, or download needed files before deleting a temporary runtime. |
+| Model cache | My Drive → ComfyUI_Models, or temporary `/content/H3_models` | Manage the cache separately. Stopping ComfyUI does not delete cached models. |
+
+Browser `drive.file` authorization and Colab's `drive.mount()` are different permissions. The browser upload is limited to app-accessible files; mounting Drive lets notebook code access the mounted Drive and is authorized separately inside Colab. Review the notebook before granting that access. [Google explains mounted Drive access](https://research.google.com/colaboratory/faq.html).
+
+Never post an unredacted notebook, workflow JSON, log or private media in a public bug report. This table describes the preview's behavior; it is not a substitute for the operator-specific privacy policy needed before a public service launch.
+
 ## Optional Google Drive upload preview
 
 Live Google authorization and upload have **not yet been verified**. Download remains available without this setup.

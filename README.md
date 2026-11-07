@@ -1,8 +1,10 @@
-# GoobleLab — MiniMax H3 Google Colab notebooks
+# GoobleLab — MiniMax H3 notebook builder for Google Colab
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/narcisoJavier/GoobleLab/blob/main/MiniMax_H3_Colab.ipynb)
 
-Generate AI videos with sound in **Google Colab** using open-weight **MiniMax H3** and ComfyUI. GoobleLab supports text-to-video, image-to-video from a first frame, and reference-image-to-video, with five model presets and optional compatible LoRAs. Save the MP4 to Google Drive or the Colab runtime.
+Prepare editable **Google Colab** notebooks for AI video generation with sound using open-weight **MiniMax H3** and ComfyUI. Configure text-to-video, first-frame image-to-video or reference-image workflows, five model presets and compatible LoRAs. Generation runs in your own Colab account.
+
+**Status: private product preview, not a production paid SaaS.** Only the original Turbo 8 workflow at 864×480 has a recorded successful GPU run. The refactored runtime, 1344×768 default, other workflows and live browser Drive integration still need end-to-end validation. [SaaS assessment and launch gates](docs/SAAS.md) · [Contributing and release checks](CONTRIBUTING.md) · [Security reports](SECURITY.md)
 
 **The notebook is the core output.** The browser builder is GoobleLab's primary interface for preparing it, with a Free basic builder and a Pro customization preview. You can also open the notebook above and configure it directly. ComfyUI runs in your own Colab runtime; the optional [Windows v0.2.0 companion](#optional-windows-desktop-companion) remains available.
 
@@ -18,6 +20,8 @@ python -m http.server 8765 --bind 127.0.0.1 --directory web/dist
 ```
 
 Open [GoobleLab locally](http://127.0.0.1:8765/), enter a prompt, and download an editable notebook. Free uses the basic MiniMax H3 text-to-video defaults. **Preview Pro** unlocks image/reference workflows and advanced settings for evaluation; pricing, subscriptions and billing are not enabled. Projects stay in this browser, with no image files or Google tokens persisted.
+
+Free refers to the builder, not included Google compute: this notebook targets an A100, high RAM and roughly 50 GB of storage. Suitable Colab resources and storage are your responsibility and may cost money. A future GoobleLab subscription would be separate from Google's Colab plans.
 
 See the [browser guide](docs/WEB.md) for the optional Web OAuth Drive upload preview, and the [Free/Pro proposal](docs/SAAS.md) for the paid product direction. Live Google authorization and upload remain unverified.
 
@@ -78,6 +82,8 @@ Choose a **ComfyUI-compatible model-only LoRA trained for the selected H3 family
 - **Out of memory:** reduce resolution or duration, restart the backend, and retry. Maximum resolution is more demanding than the smaller test settings.
 - **Runtime disconnected:** reconnect and rerun setup/startup. Cached Drive files and saved Drive outputs remain; files stored only under `/content` can be lost.
 
+Each generation also saves `workflow_api.json`, which includes the prompt and settings. Exported notebooks contain your prompt too. Removing a local project or disconnecting Google does not remove downloaded files, Drive projects, model caches or generated outputs. See [where data lives and how to remove it](docs/WEB.md#where-data-lives-and-how-to-remove-it) before sharing notebooks or diagnostics.
+
 ## Project status
 
 The original FL2VA 8-step notebook generated a video at 864×480 in the author's Colab session. **That clip is the only GPU-validated path so far.** The refactored runner, other presets, custom-LoRA loading, image/reference paths and 1344×768 default have offline checks but still need GPU validation. The desktop exporter and OAuth helpers also have offline checks; live Google sign-in and Drive upload have not yet been tested. Local checks do not establish generation quality, GPU compatibility or end-to-end Google integration.
@@ -88,7 +94,13 @@ Please include the selected preset, GPU, settings and relevant log excerpt when 
 
 [`MiniMax_H3_Colab.ipynb`](MiniMax_H3_Colab.ipynb) provides the forms, [`runner.py`](runner.py) handles setup and generation, [`presets.json`](presets.json) lists the model presets, and [`desktop/`](desktop/) contains the optional Rust companion. The v0.2.0 notebook loads its runner from the matching release tag. Support for other open-weight video models is a future goal after the MiniMax H3 workflow is stable.
 
-Run the offline checks with `python -m unittest discover -s tests -v`. They do not install packages, download model weights, or execute GPU inference.
+With Python 3.10+ and Node.js 22+, run the core offline release checks:
+
+```sh
+python scripts/check.py
+```
+
+This runs Python and browser tests, builds the browser and syntax-checks eight exported notebooks across all five presets. It does not install packages, download model weights, use credentials or execute GPU inference. See [CONTRIBUTING.md](CONTRIBUTING.md) for runtime release/versioning rules. Hosted CI is not configured yet.
 
 To build and run the desktop app on Windows, install Rust **1.95 or newer** with the Windows MSVC build tools, then run from the repository root:
 

@@ -1,0 +1,39 @@
+name: Bug report
+description: Report a notebook or browser failure using redacted diagnostics.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include tokens, OAuth JSON, private prompts/media or full unredacted logs. For vulnerabilities, use Security → Report a vulnerability."
+  - type: input
+    id: version
+    attributes:
+      label: Commit or release
+      placeholder: "v0.2.0 notebook or browser commit SHA"
+    validations:
+      required: true
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Where did it fail?
+      options:
+        - Browser builder / download
+        - Browser Google Drive upload
+        - Colab notebook
+        - Optional Windows companion
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps and expected result
+      description: Include the preset, dimensions, duration and failing notebook step. Use a synthetic prompt.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment and redacted error
+      description: Browser/OS, or Colab GPU/VRAM/RAM and relevant package versions. Paste only the relevant redacted error excerpt.
+    validations:
+      required: true
