@@ -1,40 +1,198 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-07T17:34:28.2234921+08:00",
+  "generatedAt": "2026-11-07T10:01:40.471241+00:00",
   "title": "Design System: GoobleLab",
   "extensions": {
     "colorMeta": {
-      "rail": { "role": "primary", "displayName": "Chrome yellow" },
-      "accent": { "role": "primary", "displayName": "Deep green" },
-      "ground": { "role": "neutral", "displayName": "Warm ground" },
-      "surface": { "role": "neutral", "displayName": "Warm white" },
-      "summary": { "role": "neutral", "displayName": "Summary paper" },
-      "workflow-selected": { "role": "neutral", "displayName": "Selected paper" },
-      "ink": { "role": "neutral", "displayName": "Ink" },
-      "muted": { "role": "neutral", "displayName": "Olive grey" },
-      "border": { "role": "neutral", "displayName": "Paper border" },
-      "control-hover": { "role": "neutral", "displayName": "Warm hover paper" },
-      "control-active": { "role": "neutral", "displayName": "Warm pressed paper" },
-      "white": { "role": "neutral", "displayName": "White" },
-      "error": { "displayName": "Error red" },
-      "warning": { "displayName": "Warning brown" }
+      "rail": {
+        "role": "primary",
+        "displayName": "Chrome yellow"
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Deep green"
+      },
+      "ground": {
+        "role": "neutral",
+        "displayName": "Warm ground"
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Warm white"
+      },
+      "summary": {
+        "role": "neutral",
+        "displayName": "Summary paper"
+      },
+      "workflow-selected": {
+        "role": "neutral",
+        "displayName": "Selected paper"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink"
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Olive grey"
+      },
+      "border": {
+        "role": "neutral",
+        "displayName": "Paper border"
+      },
+      "control-hover": {
+        "role": "neutral",
+        "displayName": "Warm hover paper"
+      },
+      "control-active": {
+        "role": "neutral",
+        "displayName": "Warm pressed paper"
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White"
+      },
+      "error": {
+        "displayName": "Error red"
+      },
+      "warning": {
+        "displayName": "Warning brown"
+      },
+      "web-primary-hover": {
+        "role": "neutral",
+        "displayName": "Browser primary hover"
+      },
+      "web-step-hover": {
+        "role": "neutral",
+        "displayName": "Browser step hover"
+      },
+      "web-disabled-button": {
+        "role": "neutral",
+        "displayName": "Browser disabled button"
+      },
+      "web-disabled-text": {
+        "role": "neutral",
+        "displayName": "Browser disabled button text"
+      },
+      "web-disabled-border": {
+        "role": "neutral",
+        "displayName": "Browser disabled border"
+      },
+      "web-disabled-field": {
+        "role": "neutral",
+        "displayName": "Browser disabled field"
+      },
+      "web-disabled-field-text": {
+        "role": "neutral",
+        "displayName": "Browser disabled field text"
+      }
     },
     "typographyMeta": {
-      "title": { "displayName": "Screen title", "purpose": "Native screen headings." },
-      "body": { "displayName": "Body", "purpose": "Native labels and editable values." },
-      "button": { "displayName": "Button", "purpose": "Native action labels." },
-      "guidance": { "displayName": "Guidance", "purpose": "Short introductions and the rail product statement. Georgia is loaded from Windows; failed loading falls back to the proportional family." },
-      "template-title": { "displayName": "Template title", "purpose": "Workflow choice titles." },
-      "template-guidance": { "displayName": "Template guidance", "purpose": "Short serif descriptions inside workflow choices." },
-      "small": { "displayName": "Small", "purpose": "Help text, summary labels and privacy notes." }
+      "title": {
+        "displayName": "Screen title",
+        "purpose": "Native screen headings."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Native labels and editable values."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Native action labels."
+      },
+      "guidance": {
+        "displayName": "Guidance",
+        "purpose": "Short introductions and the rail product statement. Georgia is loaded from Windows; failed loading falls back to the proportional family."
+      },
+      "template-title": {
+        "displayName": "Template title",
+        "purpose": "Workflow choice titles."
+      },
+      "template-guidance": {
+        "displayName": "Template guidance",
+        "purpose": "Short serif descriptions inside workflow choices."
+      },
+      "small": {
+        "displayName": "Small",
+        "purpose": "Help text, summary labels and privacy notes."
+      },
+      "web-body": {
+        "displayName": "Browser body",
+        "purpose": "Browser document and field text."
+      },
+      "web-title": {
+        "displayName": "Browser workspace title",
+        "purpose": "Responsive workspace headings."
+      },
+      "web-guidance": {
+        "displayName": "Browser guidance",
+        "purpose": "Georgia introductions."
+      },
+      "web-button": {
+        "displayName": "Browser action",
+        "purpose": "Primary and secondary button labels."
+      },
+      "web-field-label": {
+        "displayName": "Browser field label",
+        "purpose": "Explicit visible input labels."
+      },
+      "web-badge": {
+        "displayName": "Browser plan badge",
+        "purpose": "Free and Pro preview badges."
+      }
     },
     "shadows": [
-      { "name": "native-popup", "value": "egui Shadow { offset: [6, 10], blur: 8, spread: 0, color: black alpha 25/255 }", "purpose": "Inherited egui 0.37 light-theme popup default. Main panels and workflow choices do not use this shadow." }
+      {
+        "name": "native-popup",
+        "value": "egui Shadow { offset: [6, 10], blur: 8, spread: 0, color: black alpha 25/255 }",
+        "purpose": "Inherited egui 0.37 light-theme popup default. Main panels and workflow choices do not use this shadow."
+      },
+      {
+        "name": "web-status-toast",
+        "value": "0 8px 28px #17201f26",
+        "purpose": "The fixed browser status toast; other browser surfaces remain flat."
+      }
     ],
     "motion": [
-      { "name": "native-widget-animation", "value": "0.2s", "purpose": "Inherited egui Style.animation_time, without a custom easing or motion system." }
+      {
+        "name": "native-widget-animation",
+        "value": "0.2s",
+        "purpose": "Inherited egui Style.animation_time, without a custom easing or motion system."
+      },
+      {
+        "name": "web-control-colors",
+        "value": "background-color 120ms ease, border-color 120ms ease",
+        "purpose": "Button states, only when prefers-reduced-motion is no-preference."
+      },
+      {
+        "name": "web-workflow-border",
+        "value": "border-color 120ms ease",
+        "purpose": "Workflow border states, only when prefers-reduced-motion is no-preference."
+      },
+      {
+        "name": "web-toast-entry",
+        "value": "translate 0 8px to 0 0; 160ms ease-out",
+        "purpose": "Status toast entry, only when prefers-reduced-motion is no-preference."
+      }
     ],
-    "breakpoints": []
+    "breakpoints": [
+      {
+        "name": "web-wide-min",
+        "value": "1450px"
+      },
+      {
+        "name": "web-compact-max",
+        "value": "1050px"
+      },
+      {
+        "name": "web-single-column-max",
+        "value": "850px"
+      },
+      {
+        "name": "web-small-max",
+        "value": "450px"
+      }
+    ]
   },
   "components": [
     {
@@ -84,33 +242,91 @@
       "description": "Shadow-DOM illustration of the native summary pane's tonal surface and label/value pairing; the application updates and scrolls it independently.",
       "html": "<aside class=\"ds-plan\"><div class=\"ds-plan-title\">Notebook plan</div><div class=\"ds-plan-label\">Workflow</div><div class=\"ds-plan-value\">Text to video</div><div class=\"ds-plan-label\">Output</div><div class=\"ds-plan-value\">1344 × 768</div><div class=\"ds-plan-help\">GPU execution happens in Colab. No local GPU needed for this builder.</div></aside>",
       "css": ".ds-plan { width: 191px; padding: 22px; background: #eee9dc; color: #17201f; font-family: 'Segoe UI', sans-serif; font-size: 16px; border-radius: 0; } .ds-plan-title { font-size: 19px; margin-bottom: 20px; } .ds-plan-label { color: #586052; font-size: 13px; margin-bottom: 10px; } .ds-plan-value { margin-bottom: 22px; } .ds-plan-help { color: #586052; font-size: 13px; }"
+    },
+    {
+      "name": "Browser primary action",
+      "kind": "button",
+      "refersTo": "web-button-primary",
+      "description": "Browser CSS primary action. Variables use the browser custom properties with literal fallbacks for an isolated preview.",
+      "html": "<button class=\"ds-web-primary\">Download .ipynb</button>",
+      "css": ".ds-web-primary{font-family:'Segoe UI',system-ui,sans-serif;font-size:16px;display:inline-flex;justify-content:center;align-items:center;gap:8px;min-height:43px;padding:9px 16px;border:1px solid var(--border,#ccc9b9);border-radius:var(--radius,6px);background:var(--surface,#fffdf7);color:var(--ink,#17201f);text-decoration:none;font-weight:550;line-height:1.4;cursor:pointer;background:var(--accent,#253d36);color:white;border-color:var(--accent,#253d36)}.ds-web-primary:hover{background:#344e43}.ds-web-primary:focus-visible{outline:3px solid var(--accent,#253d36);outline-offset:4px;}.ds-web-primary:disabled{background:#eeeade;color:#76786c;border-color:#d9d5c6;cursor:not-allowed}@media(prefers-reduced-motion:no-preference){.ds-web-primary{transition:background-color 120ms ease,border-color 120ms ease}}"
+    },
+    {
+      "name": "Browser secondary action",
+      "kind": "button",
+      "refersTo": "web-button-secondary",
+      "description": "Browser secondary action with actual warm hover and visible keyboard focus.",
+      "html": "<button class=\"ds-web-secondary\">Save project</button>",
+      "css": ".ds-web-secondary{font-family:'Segoe UI',system-ui,sans-serif;font-size:16px;display:inline-flex;justify-content:center;align-items:center;gap:8px;min-height:43px;padding:9px 16px;border:1px solid var(--border,#ccc9b9);border-radius:var(--radius,6px);background:var(--surface,#fffdf7);color:var(--ink,#17201f);text-decoration:none;font-weight:550;line-height:1.4;cursor:pointer;}.ds-web-secondary:hover{background:var(--hover,#efe6c6)}.ds-web-secondary:focus-visible{outline:3px solid var(--accent,#253d36);outline-offset:4px;}.ds-web-secondary:disabled{background:#eeeade;color:#76786c;border-color:#d9d5c6;cursor:not-allowed}@media(prefers-reduced-motion:no-preference){.ds-web-secondary{transition:background-color 120ms ease,border-color 120ms ease}}"
+    },
+    {
+      "name": "Browser text field",
+      "kind": "input",
+      "refersTo": "web-field",
+      "description": "Actual browser field styling with explicit label, disabled fill and focus treatment.",
+      "html": "<div class=\"ds-web-field\"><label for=\"ds-web-project\">Project name</label><input id=\"ds-web-project\" value=\"My MiniMax video\" /></div>",
+      "css": ".ds-web-field{display:grid;gap:7px;margin-bottom:20px;font-family:'Segoe UI',system-ui,sans-serif;font-size:16px;line-height:1.5;color:var(--ink,#17201f)}.ds-web-field label{font-size:14px;font-weight:600}.ds-web-field input{font:inherit;width:100%;background:white;color:var(--ink,#17201f);border:1px solid var(--border,#ccc9b9);border-radius:6px;padding:10px 12px;min-height:44px;caret-color:var(--accent,#253d36)}.ds-web-field input:focus-visible{outline:3px solid var(--accent,#253d36);outline-offset:4px;}.ds-web-field input:disabled{background:#f0ecdf;color:#727568;opacity:1}"
+    },
+    {
+      "name": "Browser workflow radio",
+      "kind": "card",
+      "refersTo": "web-workflow-selected",
+      "description": "Selected browser workflow with semantic radio, serif guidance and Free badge. Checked border thickness is offset by padding.",
+      "html": "<label class=\"ds-web-workflow\"><input type=\"radio\" name=\"ds-web-workflow\" checked><span><strong>Text to video</strong><span class=\"ds-web-description\">Describe a scene, motion and sound.</span></span><span class=\"ds-web-free\">Free</span></label>",
+      "css": ".ds-web-workflow{font-family:'Segoe UI',system-ui,sans-serif;font-size:16px;line-height:1.5;color:var(--ink,#17201f);display:grid;grid-template-columns:22px minmax(0,1fr) auto;align-items:start;gap:16px;padding:22px;background:var(--surface,#fffdf7);border:1px solid var(--border,#ccc9b9);border-radius:var(--radius,6px);cursor:pointer}.ds-web-workflow:has(input:checked){border:2px solid var(--accent,#253d36);padding:21px;background:var(--selected,#fff9db)}.ds-web-workflow input{margin:6px 0 0;accent-color:var(--accent,#253d36);width:17px;height:17px}.ds-web-workflow input:focus-visible{outline:3px solid var(--accent,#253d36);outline-offset:4px;}.ds-web-workflow strong{font-size:19px;font-weight:600;display:block;margin-bottom:5px}.ds-web-description{font-family:Georgia,serif;color:var(--muted,#586052);font-size:15px;display:block;line-height:1.55}.ds-web-free{font-size:12px;font-weight:650;padding:3px 9px;border:1px solid var(--border,#ccc9b9);border-radius:4px;background:var(--surface,#fffdf7);margin-top:3px}@media(max-width:450px){.ds-web-workflow{grid-template-columns:18px minmax(0,1fr);gap:10px}.ds-web-free{grid-column:2;justify-self:start;margin:0}}@media(prefers-reduced-motion:no-preference){.ds-web-workflow{transition:border-color 120ms ease}}"
+    },
+    {
+      "name": "Browser Pro preview badge",
+      "kind": "chip",
+      "refersTo": "web-badge-pro",
+      "description": "Noninteractive yellow plan badge; preview status is text, not a claim of an active subscription.",
+      "html": "<span class=\"ds-web-pro\">Pro preview</span>",
+      "css": ".ds-web-pro{font-family:'Segoe UI',system-ui,sans-serif;font-size:16px;display:inline-block;font-size:12px;font-weight:650;padding:3px 9px;border:1px solid var(--rail,#f4c62a);border-radius:4px;background:var(--rail,#f4c62a);color:var(--ink,#17201f);vertical-align:middle}"
     }
   ],
   "narrative": {
     "northStar": "Chrome manual",
-    "overview": "A bright yellow progress rail, warm reading surfaces and dark green actions give the optional notebook companion the character of a practical printed manual. Segoe UI carries the controls; Georgia carries short guidance. The notebook remains the core product, and GPU work happens in Colab.\n\nThis documents the implemented working direction after the user's request for a bolder design. The user has not locked an exploration card; this is an observed system, not a claim of final visual approval. The source of truth is `desktop/src/main.rs`, with inherited widget behavior from the locked egui 0.37.0 dependency. Measurements use native logical pixels (egui points), scaled by desktop DPI; they are not CSS rem or fixed physical pixels.",
+    "overview": "A bright yellow progress rail, warm reading surfaces and dark green actions give the optional notebook companion the character of a practical printed manual. Segoe UI carries the controls; Georgia carries short guidance. The notebook remains the core product, and GPU work happens in Colab.\n\nThis documents the implemented working direction after the user's request for a bolder design. The user has not locked an exploration card; this is an observed system, not a claim of final visual approval. The source of truth is `desktop/src/main.rs`, with inherited widget behavior from the locked egui 0.37.0 dependency. Measurements use native logical pixels (egui points), scaled by desktop DPI; they are not CSS rem or fixed physical pixels.\n\nThe browser is now the primary interface; the Windows companion documented above is preserved as a native legacy reference. The browser extends the same Chrome manual working direction, without a new visual world or claim of a locked user selection. `web/style.css` owns browser styling, `web/index.html` owns the shell, and `web/app.mjs` supplies the visible builder, projects and plan states. All browser measurements below are CSS pixels; the native logical-pixel measurements above remain unchanged.\n\nThe browser retains Template → Settings → Export/upload, with a header for Builder, Saved projects and Free & Pro. Free configures a basic notebook; Pro is an advanced customization evaluation preview. Both produce editable notebooks run in the user's own Colab account. No shipping raster assets are used: the brand icon and favicon are SVG, and selected image previews are user-provided media.",
     "keyCharacteristics": [
       "Chrome-yellow orientation rail and warm neutral work surfaces.",
       "Native Windows typography with serif guidance.",
       "Flat panels, compact controls and a continuously visible notebook plan.",
-      "Text, borders and selection states carry meaning without shipping raster artwork."
+      "Text, borders and selection states carry meaning without shipping raster artwork.",
+      "Browser-first header, responsive step rail and flowing notebook plan.",
+      "Honest Free and Pro customization preview states.",
+      "Device-local projects and editable notebook downloads."
     ],
     "rules": [
-      { "name": "The Rail Contrast Rule", "body": "Rail text and rail hyperlinks use ink. The general green hyperlink color is used on the reading surfaces.", "section": "colors" },
-      { "name": "The Guidance Rule", "body": "Use the serif family for short guidance; controls and editable text use the proportional UI family.", "section": "typography" }
+      {
+        "name": "The Rail Contrast Rule",
+        "body": "Rail text and rail hyperlinks use ink. The general green hyperlink color is used on the reading surfaces.",
+        "section": "colors"
+      },
+      {
+        "name": "The Guidance Rule",
+        "body": "Use the serif family for short guidance; controls and editable text use the proportional UI family.",
+        "section": "typography"
+      }
     ],
     "dos": [
       "Do retain ink text and links on the yellow rail.",
       "Do keep control text in the UI family and short guidance in the guidance family.",
       "Do preserve the independent work and summary scrollers at the minimum window size.",
       "Do keep the notebook plan and the Colab handoff explicit.",
-      "Do use native control behavior and the implemented palette when extending this companion."
+      "Do use native control behavior and the implemented palette when extending this companion.",
+      "Do preserve the shared warm yellow palette and the existing guided sequence when adding browser screens.",
+      "Do use the actual CSS breakpoints and browser focus treatment; retain the separate native legacy measurements above.",
+      "Do show Free restrictions and Pro preview status in text as well as control states and badges.",
+      "Do describe projects as device-local and require image reselection when the file is no longer in memory."
     ],
     "donts": [
       "Don't treat the working Chrome manual direction as a locked user selection.",
       "Don't describe native logical pixels as web rem or add unimplemented mobile breakpoints.",
       "Don't replace observable native states with invented CSS effects, gradients or card shadows.",
-      "Don't imply that the desktop app runs local inference or that live Google sign-in has been verified."
+      "Don't imply that the desktop app runs local inference or that live Google sign-in has been verified.",
+      "Don't claim an approved new visual identity, active billing, cloud sync or a verified live Drive upload.",
+      "Don't apply the native three-pane scrolling model to the responsive browser document.",
+      "Don't replace SVG branding or text-led workflow choices with undocumented shipping raster artwork."
     ]
   }
 }

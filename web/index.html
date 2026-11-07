@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Build a MiniMax H3 Google Colab notebook in your browser. Configure video templates, prompts, and compatible LoRAs, then export your notebook.">
+  <meta name="theme-color" content="#f4c62a">
+  <title>GoobleLab — MiniMax H3 Notebook Builder</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./app.mjs"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to builder</a>
+  <header class="topbar">
+    <a class="brand" href="#builder" aria-label="GoobleLab home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M7 5h18v22H7zM12 5v22M16 11h5M16 16h5M16 21h3"/></svg>GoobleLab</a>
+    <nav aria-label="Main navigation"><a href="#builder">Builder</a><a href="#projects">Saved projects</a><a href="#plans">Free &amp; Pro</a></nav>
+    <div class="account"><span id="plan-badge" class="badge">Free</span><button id="preview-pro" class="button small">Preview Pro</button></div>
+  </header>
+  <div id="app"><main class="boot" id="main"><h1>Loading your notebook builder…</h1><p>Preparing the MiniMax H3 templates.</p></main></div>
+  <p id="status" class="toast" role="status" aria-live="polite" hidden></p>
+  <footer class="site-footer"><span>Made for notebooks. Run on your own Colab GPU.</span><a href="https://github.com/narcisoJavier/GoobleLab" target="_blank" rel="noopener noreferrer">GitHub &amp; notebooks</a><a href="https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">MiniMax H3 license</a></footer>
+</body>
+</html>

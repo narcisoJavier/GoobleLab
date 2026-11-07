@@ -4,7 +4,22 @@
 
 Generate AI videos with sound in **Google Colab** using open-weight **MiniMax H3** and ComfyUI. GoobleLab supports text-to-video, image-to-video from a first frame, and reference-image-to-video, with five model presets and optional compatible LoRAs. Save the MP4 to Google Drive or the Colab runtime.
 
-**The notebook is the core product.** Open it above to get started; configuration stays in notebook forms and ComfyUI runs inside the Colab runtime. The optional [Windows desktop companion](#optional-windows-desktop-companion) prepares a configured notebook for you.
+**The notebook is the core output.** The browser builder is GoobleLab's primary interface for preparing it, with a Free basic builder and a Pro customization preview. You can also open the notebook above and configure it directly. ComfyUI runs in your own Colab runtime; the optional [Windows v0.2.0 companion](#optional-windows-desktop-companion) remains available.
+
+## Browser builder preview
+
+[Hosted preview (owner-private, ChatGPT sign-in)](https://gooblelab-notebook-builder.helpfulaisle2.chatgpt.site) · [Free/Pro product direction](docs/SAAS.md)
+
+Build and serve the browser app from the repository root:
+
+```sh
+node web/build.mjs
+python -m http.server 8765 --bind 127.0.0.1 --directory web/dist
+```
+
+Open [GoobleLab locally](http://127.0.0.1:8765/), enter a prompt, and download an editable notebook. Free uses the basic MiniMax H3 text-to-video defaults. **Preview Pro** unlocks image/reference workflows and advanced settings for evaluation; pricing, subscriptions and billing are not enabled. Projects stay in this browser, with no image files or Google tokens persisted.
+
+See the [browser guide](docs/WEB.md) for the optional Web OAuth Drive upload preview, and the [Free/Pro proposal](docs/SAAS.md) for the paid product direction. Live Google authorization and upload remain unverified.
 
 ## Quick start
 
@@ -17,6 +32,8 @@ Generate AI videos with sound in **Google Colab** using open-weight **MiniMax H3
 After changing the preset or LoRA source in Step 1, rerun Step 1 and then Steps 3 and 4 before generating. With Drive enabled, the model cache is **My Drive → ComfyUI_Models** and MP4s appear under **My Drive → ComfyUI_Outputs → MiniMaxH3_[timestamp]**. Without Drive, files live under `/content/H3_models` and `/content/H3_outputs` and are temporary.
 
 ## Optional Windows desktop companion
+
+The browser is the primary interface for new work; this optional legacy desktop release remains available.
 
 [Download GoobleLab v0.2.0 for Windows x64](https://github.com/narcisoJavier/GoobleLab/releases/download/v0.2.0/GoobleLab-v0.2.0-windows-x64.zip) · [Release notes](https://github.com/narcisoJavier/GoobleLab/releases/tag/v0.2.0) · [Desktop guide](docs/DESKTOP.md)
 

@@ -4,11 +4,11 @@
 
 ## Platform
 
-Windows desktop companion and Google Colab notebooks. Windows is the first supported desktop platform; the notebooks remain the primary product.
+Browser application and Google Colab notebooks. The browser is the primary interface; editable notebooks remain the core output and can be used directly. The Windows v0.2.0 companion is preserved as an optional legacy interface.
 
 ## Stack
 
-Rust desktop application, as requested. Native egui/eframe is the implementation choice for a small Rust-only GUI. Python and native ComfyUI nodes continue to execute the notebook workflows on Colab.
+Dependency-free HTML, CSS and browser JavaScript, with a small Node.js static build script. Google Identity Services supports the optional Web OAuth upload preview. Python and native ComfyUI nodes execute workflows on Colab. The existing Rust egui/eframe desktop source remains available.
 
 ## Users
 
@@ -16,33 +16,35 @@ People who want to generate media with open-weight MiniMax H3 using a Colab GPU,
 
 ## Product Purpose
 
-The notebook is the core deliverable. An optional guided companion chooses a template, configures generation, builds the notebook, uploads it and the selected image to Drive, and opens Colab. Users select their Colab runtime and run the notebook there.
+Guide users through template → settings → export/upload in a browser. Free prepares a basic MiniMax H3 notebook; the Pro direction sells advanced customization, curated workflows and reusable profiles. Downloads stay editable and open source. Users select their own Colab runtime and run the cells there.
 
 ## Operating Context
 
-The existing repository has a working H3 FL2VA eight-step notebook and five curated presets. The user selected template → settings → export/upload as the desktop flow and automatic upload of the selected image alongside the notebook. Google Drive upload needs a user-supplied Desktop OAuth client configuration; the first version includes setup instructions and local export.
+The existing repository has a working H3 FL2VA eight-step notebook and five curated presets. The user chose a browser-first product, with Free basic notebook creation and a paid advanced customization direction. The current Pro toggle is an evaluation preview; there are no accounts, subscriptions, prices or payment enforcement. Optional browser Drive upload uses a user-supplied Web application client ID and authorized JavaScript origin. The legacy desktop flow uses its separate Desktop OAuth configuration.
 
 ## Capabilities and Constraints
 
 - First catalog: H3 text-to-video, image-to-video and reference-image-to-video, using the verified native ComfyUI graphs.
 - Other model families and arbitrary ComfyUI graph imports are future work.
-- The desktop application configures notebooks; inference runs on Colab.
+- The browser and legacy desktop application configure notebooks; inference runs on the user's Colab account.
 - No Google tokens or local Windows image paths enter exported notebooks.
-- Google login uses the system browser, PKCE, a localhost callback and the drive.file scope. Tokens stay in memory in this version.
-- Colab now documents a beta runtime API; direct runtime management is outside this first companion's scope.
-- Runtime availability, model terms and GPU memory constraints still apply.
+- Browser projects retain up to 20 configurations on the device, including image filenames; image files and tokens are not persisted. There is no cloud sync.
+- Browser Google login uses Google Identity Services and the drive.file scope. Tokens stay in page memory. Upload creates a private Drive folder with the notebook and selected image.
+- Free uses text-to-video, FL2VA Turbo 8, 1344×768, requested 5 seconds and seed 12345. Pro preview adds image/reference workflows and advanced controls without charging.
+- Runtime control, arbitrary workflow imports, accounts and billing are outside the current browser preview.
+- Runtime availability, model terms and GPU memory constraints apply. Paid launch requires review of Colab terms and the MiniMax H3 license's territory and commercial provisions; see docs/SAAS.md.
 
 ## Brand Commitments
 
-The application and repository are named GoobleLab, spelled G-O-O-B-L-E-L-A-B. The notebooks remain central in the README and product explanation; the GUI is an optional feature.
+The application and repository are named GoobleLab, spelled G-O-O-B-L-E-L-A-B. The notebook remains central in the product explanation; the browser provides the primary guided interface. Keep the warm yellow visual direction and visible MiniMax H3 attribution.
 
 ## Evidence on Hand
 
-The user generated an H3 clip with the original Colab notebook. The refactored runner has 18 passing offline checks and the desktop libraries have 11 passing tests. Native UI captures cover both supported window sizes; local exports produce valid Python cells. Live Google authorization, uploads and new GPU paths remain unverified. No production OAuth credentials are supplied.
+The user generated an H3 clip with the original Colab notebook. Browser exporter checks cover safe prompt quoting, exact unsigned 64-bit seeds, clean six-cell notebooks and input validation; exported Python cells compile. Drive requests have offline mocked checks. Live browser Google authorization, uploads and new GPU paths remain unverified. No production OAuth credentials or billing are supplied. Prior desktop code and its release are preserved.
 
 ## Product Principles
 
-1. Preserve a usable notebook without the desktop app.
+1. Preserve a usable, editable notebook without the browser or desktop app.
 2. Guide configuration with supported templates and meaningful defaults.
 3. Keep media and credentials private until the user chooses export/upload.
 4. Make the transition into Colab explicit and recoverable.
